@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static Website on My New Hugo Site</title>
+    <link>http://localhost:8000/topics/static-website/index.xml</link>
+    <description>Recent content in Static Website on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <atom:link href="http://localhost:8000/topics/static-website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>goor to great</title>
+      <link>http://localhost:8000/2017/02/15/goor-to-great/</link>
+      <pubDate>Wed, 15 Feb 2017 22:48:34 +0100</pubDate>
+      
+      <guid>http://localhost:8000/2017/02/15/goor-to-great/</guid>
+      <description>&lt;p&gt;I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;.&lt;br /&gt;
+An awesome read sharing detailed analysis on how good companies became great.&lt;br /&gt;
+D&amp;rsquo;autres lignes pour le fun.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Création du blog-notes avec Pélican</title>
+      <link>http://localhost:8000/2015/12/16/cr%C3%A9ation-du-blog-notes-avec-p%C3%A9lican/</link>
+      <pubDate>Wed, 16 Dec 2015 22:48:34 +0100</pubDate>
+      
+      <guid>http://localhost:8000/2015/12/16/cr%C3%A9ation-du-blog-notes-avec-p%C3%A9lican/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;./2015-12-15_pelican_installation.html&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Cet article concerne la création de ce blog-notes.&lt;/p&gt;
+
+&lt;h2 id=&#34;création-du-site&#34;&gt;Création du site&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;C:\Applis\Wiki\pelican\pelican&amp;gt;pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will help you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+&amp;gt; Where do you want to create your new web site? [.] sauml.bitbucket.org
+&amp;gt; What will be the title of this web site? Mes Notes
+&amp;gt; Who will be the author of this web site? sauml
+&amp;gt; What will be the default language of this web site? [en] fr
+&amp;gt; Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
+&amp;gt; What is your URL prefix? (see above example; no trailing slash) http://sauml.b
+itbucket.org/
+&amp;gt; Do you want to enable article pagination? (Y/n)
+&amp;gt; How many articles per page do you want? [10]
+&amp;gt; What is your time zone? [Europe/Paris]
+&amp;gt; Do you want to generate a Fabfile/Makefile to automate generation and publishi
+ng? (Y/n)
+&amp;gt; Do you want an auto-reload &amp;amp; simpleHTTP script to assist with theme and site d
+evelopment? (Y/n)
+&amp;gt; Do you want to upload your website using FTP? (y/N)
+&amp;gt; Do you want to upload your website using SSH? (y/N)
+&amp;gt; Do you want to upload your website using Dropbox? (y/N)
+&amp;gt; Do you want to upload your website using S3? (y/N)
+&amp;gt; Do you want to upload your website using Rackspace Cloud Files? (y/N)
+&amp;gt; Do you want to upload your website using GitHub Pages? (y/N)
+Done. Your new project is available at C:\Applis\Wiki\pelican\pelican\sauml.bitb
+ucket.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;création-des-lanceurs-pour-windows&#34;&gt;Création des lanceurs pour windows&lt;/h1&gt;
+
+&lt;p&gt;Dans le répertoire sauml.bitbucket.org
+Créer les fichiers suivants:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;pelrun.bat&lt;/code&gt; pour générer le contenu di site de debug dans le dossier output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pelican content --debug --autoreload  --output output --settings pelicanconf.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;pelserve.bat&lt;/code&gt; pour lancer le site de debug&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pushd output
+python -m pelican.server
+popd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;pelpub.bat&lt;/code&gt; pour générer le site de production dans le dossier output&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pelican content --output output --settings publishconf.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour développer me site en local, lancer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sauml.bitbucket.org&amp;gt;start pelrun.bat
+sauml.bitbucket.org&amp;gt;start pelserve.bat
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Le site est disponible à l&amp;rsquo;url &lt;a href=&#34;http://127.0.0.1:8000&#34;&gt;http://127.0.0.1:8000&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;configuration&#34;&gt;Configuration&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dé-commenter &lt;code&gt;RELATIVE_URLS = True&lt;/code&gt; dans &lt;code&gt;pelicanconf.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Mettre &lt;code&gt;DELETE_OUTPUT_DIRECTORY = False&lt;/code&gt; dans &lt;code&gt;publishconf.py&lt;/code&gt; pour ne pas supprimer le dépôt git dans output.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;thèmes&#34;&gt;Thèmes&lt;/h2&gt;
+
+&lt;p&gt;Récupérer les thèmes existants:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pelican&amp;gt;git clone https://github.com/getpelican/pelican-themes.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Définir le thème choisi dans pelicanconf.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;THEME = &amp;quot;../pelican-themes/foundation-default-colours&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;plugins&#34;&gt;Plugins&lt;/h2&gt;
+
+&lt;p&gt;Pour les récupérer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pelican&amp;gt;git clone https://github.com/getpelican/pelican-plugins.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Puis dans pelicanconf.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PLUGIN_PATH = &#39;../pelican-plugins&#39;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

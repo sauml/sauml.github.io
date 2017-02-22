@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Création du blog-notes avec Pélican  &middot; Sauml Blog Notes</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="pelican, blog notes, ">
+
+
+<meta property="og:title" content="Création du blog-notes avec Pélican  &middot; Sauml Blog Notes ">
+<meta property="og:site_name" content="Sauml Blog Notes"/>
+<meta property="og:url" content="/2015/12/16/pelican-creation-site/" />
+<meta property="og:locale" content="fr-FR">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2015-12-16T22:48:34&#43;01:00" />
+<meta property="og:article:modified_time" content="2015-12-16T22:48:34&#43;01:00" />
+
+  
+    
+<meta property="og:article:tag" content="pelican">
+    
+<meta property="og:article:tag" content="blog notes">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Création du blog-notes avec Pélican" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="/2015/12/16/pelican-creation-site/" />
+<meta name="twitter:domain" content="/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Création du blog-notes avec Pélican",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2015-12-16",
+    "description": "",
+    "wordCount":  401 
+  }
+</script>
+
+
+
+<link rel="canonical" href="/2015/12/16/pelican-creation-site/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.18.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="/css/bootswatch/lumen/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+
+  <link rel="stylesheet" href="/css/highlight/github.css">
+
+
+</head>
+<body class="map[name:lumen]" data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" href="/">
+          Sauml Blog Notes
+          
+          
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="/tags/" >
+                
+                Tags
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Création du blog-notes avec Pélican
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2015-12-16">16 Dec, 2015</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 2 min
+  &middot; (401 words)
+</small>
+
+
+<div class="margin-10">
+  <i class="fa fa-tags"></i>
+  
+  <a href="/tags/pelican" class="label label-primary">pelican</a>
+  
+  <a href="/tags/blog-notes" class="label label-primary">blog notes</a>
+  
+
+
+</div>
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  
+
+<h1 id="introduction">Introduction</h1>
+
+<p>La création de la structure du site est détaillée ici: <a href="/2015/12/15/installation-de-pelican/">Installation de Pélican</a></p>
+
+<p>Cet article concerne la création de ce blog-notes.</p>
+
+<h2 id="création-du-site">Création du site</h2>
+
+<pre><code>C:\Applis\Wiki\pelican\pelican&gt;pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will help you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+&gt; Where do you want to create your new web site? [.] sauml.bitbucket.org
+&gt; What will be the title of this web site? Mes Notes
+&gt; Who will be the author of this web site? sauml
+&gt; What will be the default language of this web site? [en] fr
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
+&gt; What is your URL prefix? (see above example; no trailing slash) http://sauml.b
+itbucket.org/
+&gt; Do you want to enable article pagination? (Y/n)
+&gt; How many articles per page do you want? [10]
+&gt; What is your time zone? [Europe/Paris]
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishi
+ng? (Y/n)
+&gt; Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site d
+evelopment? (Y/n)
+&gt; Do you want to upload your website using FTP? (y/N)
+&gt; Do you want to upload your website using SSH? (y/N)
+&gt; Do you want to upload your website using Dropbox? (y/N)
+&gt; Do you want to upload your website using S3? (y/N)
+&gt; Do you want to upload your website using Rackspace Cloud Files? (y/N)
+&gt; Do you want to upload your website using GitHub Pages? (y/N)
+Done. Your new project is available at C:\Applis\Wiki\pelican\pelican\sauml.bitb
+ucket.org
+</code></pre>
+
+<h1 id="création-des-lanceurs-pour-windows">Création des lanceurs pour windows</h1>
+
+<p>Dans le répertoire sauml.bitbucket.org
+Créer les fichiers suivants:</p>
+
+<ul>
+<li><p><code>pelrun.bat</code> pour générer le contenu du site de debug dans le dossier output</p>
+
+<pre><code>pelican content --debug --autoreload  --output output --settings pelicanconf.py
+</code></pre></li>
+
+<li><p><code>pelserve.bat</code> pour lancer le site de debug</p>
+
+<pre><code>pushd output
+python -m pelican.server
+popd
+</code></pre></li>
+
+<li><p><code>pelpub.bat</code> pour générer le site de production dans le dossier output</p>
+
+<pre><code>pelican content --output output --settings publishconf.py
+</code></pre></li>
+</ul>
+
+<p>Pour développer me site en local, lancer:</p>
+
+<pre><code>sauml.bitbucket.org&gt;start pelrun.bat
+sauml.bitbucket.org&gt;start pelserve.bat
+</code></pre>
+
+<p>Le site est disponible à l&rsquo;url <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p>
+
+<h1 id="configuration">Configuration</h1>
+
+<ul>
+<li>Dé-commenter <code>RELATIVE_URLS = True</code> dans <code>pelicanconf.py</code></li>
+<li>Mettre <code>DELETE_OUTPUT_DIRECTORY = False</code> dans <code>publishconf.py</code> pour ne pas supprimer le dépôt git dans output.</li>
+</ul>
+
+<h2 id="thèmes">Thèmes</h2>
+
+<p>Récupérer les thèmes existants:</p>
+
+<pre><code>pelican&gt;git clone https://github.com/getpelican/pelican-themes.git
+</code></pre>
+
+<p>Définir le thème choisi dans pelicanconf.py</p>
+
+<pre><code>THEME = &quot;../pelican-themes/foundation-default-colours&quot;
+</code></pre>
+
+<h2 id="plugins">Plugins</h2>
+
+<p>Pour les récupérer</p>
+
+<pre><code>pelican&gt;git clone https://github.com/getpelican/pelican-plugins.git
+</code></pre>
+
+<p>Puis dans pelicanconf.py</p>
+
+<pre><code>PLUGIN_PATH = '../pelican-plugins'
+</code></pre>
+
+</div>
+
+
+      <footer>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="/2015/12/16/test-theme/" title="Test du theme en cours">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+      <li class="next">
+        <a href="/2016/01/13/vim-correction-orthographe/" title="Correction d&#39;orthographe sous vim">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+  
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="sidebar-nav-fixed affix">
+  
+    <div class="section">
+      <header><div class="title">TableOfContents</div></header>
+      <div class="list-default"><nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#création-du-site">Création du site</a></li>
+</ul></li>
+<li><a href="#création-des-lanceurs-pour-windows">Création des lanceurs pour windows</a></li>
+<li><a href="#configuration">Configuration</a>
+<ul>
+<li><a href="#thèmes">Thèmes</a></li>
+<li><a href="#plugins">Plugins</a></li>
+</ul></li>
+</ul>
+</nav></div>
+    </div>
+    
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="/2016/01/13/vim-correction-orthographe/">Correction d&#39;orthographe sous vim</a>
+          </li>
+        
+          <li>
+          <a href="/2015/12/16/pelican-creation-site/">Création du blog-notes avec Pélican</a>
+          </li>
+        
+          <li>
+          <a href="/2015/12/16/test-theme/">Test du theme en cours</a>
+          </li>
+        
+          <li>
+          <a href="/2015/12/15/installation-de-pelican/">Installation de Pélican</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/tags/blog-notes">blog-notes</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/vim">vim</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+      
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+</small>
+</div>
+
+
+    
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+
+
+<script src="/js/highlight.pack.js"></script>
+<script src="/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+var ENABLE_POPOVER = ""; 
+var EXPIRE_COOKIE = ""; 
+var SHOW_MODAL_TIMEOUT = ""; 
+var MOUSE_LEAVE = ""; 
+var MODAL_SIZE = ""; 
+var POST_URL = ""; 
+var SIGNUP_HEADER = "";
+var HEADER_IMAGE = "";
+var IMG_DESCRIPTION = "";
+var SIGNUP_TEXT = "";
+var INPUT_PLACEHOLDER = "";
+var SUBMIT_BUTTON = "";
+var SUCCESS_MESSAGE = "";
+var ERROR_MESSAGE = "";
+var OPTIN = "";
+var COOKIE_NAME = "";
+</script>
+<script src="/js/popover/angular-modal-service.min.js"></script>
+
+<script src="/js/popover/popover.min.js"></script>
+
+  </body>
+</html>
+

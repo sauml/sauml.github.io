@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on Sauml Blog Notes</title>
+    <link>/tags/vim/index.xml</link>
+    <description>Recent content in Vim on Sauml Blog Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Correction d&#39;orthographe sous vim</title>
+      <link>/2016/01/13/vim-correction-orthographe/</link>
+      <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/01/13/vim-correction-orthographe/</guid>
+      <description>
+
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fermer vim&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sous-window&#34;&gt;Sous window&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Aller dans le répertoire des langues vim&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd C:\Program Files\Vim\vim74\spell
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Télécharger les fichiers de traduction.&lt;br /&gt;
+Penser à paramétrer le proxy si besoin &lt;code&gt;set et HTTP_PROXY=http://...&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -o fr.latin1.spl http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
+curl -o fr.latin1.sug http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
+curl -o fr.utf-8.spl http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+curl -o fr.utf-8.sug http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sous-linux&#34;&gt;Sous linux&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Aller dans le répertoire des langues vim (le créer s&amp;rsquo;il n&amp;rsquo;existe pas).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/.vim/spell
+cd ~/.vim/spell
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Télécharger les fichiers de traduction&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
+wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
+wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;paramétrage&#34;&gt;Paramétrage&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dans &lt;code&gt;.vimrc&lt;/code&gt; ajouter:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;set spelllang=fr&lt;/code&gt; pour définir la langue.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;set spell&lt;/code&gt; pour activer la correction par défaut.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;utilisation&#34;&gt;Utilisation&lt;/h1&gt;
+
+&lt;h2 id=&#34;en-mode-normal&#34;&gt;En mode normal&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;]s&lt;/code&gt; va au mot suivant.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[s&lt;/code&gt; va au mot précédent.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zg&lt;/code&gt; ajoute le mot dans le dictionnaire local.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zG&lt;/code&gt; ajoute le mot au dictionnaire global.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z=&lt;/code&gt; affiche la liste des propositions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;en-mode-insertion&#34;&gt;En mode insertion&lt;/h2&gt;
+
+&lt;p&gt;Il es possible d&amp;rsquo;afficher les propositions en cours de frappe.&lt;br /&gt;
+Pour cela, il faut utiliser la complétion &lt;code&gt;Ctrl+X&lt;/code&gt;.&lt;br /&gt;
+Le mode de complétion utilisé par &lt;code&gt;spell&lt;/code&gt; est &lt;code&gt;s&lt;/code&gt;.&lt;br /&gt;
+Il suffit donc lorsqu&amp;rsquo;une faute apparait de faire &lt;code&gt;Ctrl+X&lt;/code&gt; puis &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
