@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Correction d&#39;orthographe sous vim  &middot; Sauml Blog Notes</title>
+  <title>Un blog pour mes notes  &middot; Sauml Blog Notes</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,23 +14,27 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="vim, ">
+<meta name="keywords" content="blog, hugo, github, ">
 
 
-<meta property="og:title" content="Correction d&#39;orthographe sous vim  &middot; Sauml Blog Notes ">
+<meta property="og:title" content="Un blog pour mes notes  &middot; Sauml Blog Notes ">
 <meta property="og:site_name" content="Sauml Blog Notes"/>
-<meta property="og:url" content="/2016/01/13/vim-correction-orthographe/" />
+<meta property="og:url" content="/2017/02/24/un-blog-pour-mes-notes/" />
 <meta property="og:locale" content="fr-FR">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-01-13T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-01-13T00:00:00Z" />
+<meta property="og:article:published_time" content="2017-02-24T23:25:04&#43;01:00" />
+<meta property="og:article:modified_time" content="2017-02-24T23:25:04&#43;01:00" />
 
   
     
-<meta property="og:article:tag" content="vim">
+<meta property="og:article:tag" content="blog">
+    
+<meta property="og:article:tag" content="hugo">
+    
+<meta property="og:article:tag" content="github">
     
   
 
@@ -38,9 +42,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Correction d&#39;orthographe sous vim" />
+<meta name="twitter:title" content="Un blog pour mes notes" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="/2016/01/13/vim-correction-orthographe/" />
+<meta name="twitter:url" content="/2017/02/24/un-blog-pour-mes-notes/" />
 <meta name="twitter:domain" content="/">
   
 
@@ -48,20 +52,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Correction d\x27orthographe sous vim",
+    "headline": "Un blog pour mes notes",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-01-13",
+    "datePublished": "2017-02-24",
     "description": "",
-    "wordCount":  172 
+    "wordCount":  643 
   }
 </script>
 
 
 
-<link rel="canonical" href="/2016/01/13/vim-correction-orthographe/" />
+<link rel="canonical" href="/2017/02/24/un-blog-pour-mes-notes/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
 <link rel="icon" href="/favicon.png">
 <meta name="generator" content="Hugo 0.18.1" />
@@ -136,26 +140,30 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>Correction d&#39;orthographe sous vim
+    <h1>Un blog pour mes notes
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2016-01-13">13 Jan, 2016</time>
+  <time datetime="2017-02-24">24 Feb, 2017</time>
 </small>
 
 
   <small>
-  &middot; Read in about 1 min
-  &middot; (172 words)
+  &middot; Read in about 4 min
+  &middot; (643 words)
 </small>
 
 
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="/tags/vim" class="label label-primary">vim</a>
+  <a href="/tags/blog" class="label label-primary">blog</a>
+  
+  <a href="/tags/hugo" class="label label-primary">hugo</a>
+  
+  <a href="/tags/github" class="label label-primary">github</a>
   
 
 
@@ -169,77 +177,117 @@
       <div class="content">
   
 
-<h1 id="installation">Installation</h1>
+<p>Je cherche une solution pour sauvegarder mes notes, les rendre accessibles de partout et les modifier des mes différents postes.</p>
+
+<h1 id="les-contraintes">Les contraintes</h1>
+
+<p>Les postes que j&rsquo;utilise sont principalement:</p>
 
 <ul>
-<li>Fermer vim</li>
-</ul>
-
-<h2 id="sous-window">Sous window</h2>
+<li>S2: mon portable perso actuellement sous mubuntu 16.04 LTS.<br /></li>
+<li>w1: mon portable professionnel sous Windows seven 32bits.<br />
 
 <ul>
-<li><p>Aller dans le répertoire des langues vim</p>
-
-<pre><code>cd C:\Program Files\Vim\vim74\spell
-</code></pre></li>
-
-<li><p>Télécharger les fichiers de traduction.<br />
-Penser à paramétrer le proxy si besoin <code>set et HTTP_PROXY=http://...</code></p>
-
-<pre><code>curl -o fr.latin1.spl http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
-curl -o fr.latin1.sug http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
-curl -o fr.utf-8.spl http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
-curl -o fr.utf-8.sug http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
-</code></pre></li>
-</ul>
-
-<h2 id="sous-linux">Sous linux</h2>
-
-<ul>
-<li><p>Aller dans le répertoire des langues vim (le créer s&rsquo;il n&rsquo;existe pas).</p>
-
-<pre><code>mkdir -p ~/.vim/spell
-cd ~/.vim/spell
-</code></pre></li>
-
-<li><p>Télécharger les fichiers de traduction</p>
-
-<pre><code>wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
-wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
-wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
-wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
-</code></pre></li>
-</ul>
-
-<h1 id="paramétrage">Paramétrage</h1>
-
-<ul>
-<li>Dans <code>.vimrc</code> ajouter:
-
-<ul>
-<li><code>set spelllang=fr</code> pour définir la langue.</li>
-<li><code>set spell</code> pour activer la correction par défaut.</li>
+<li>Je ne suis pas administrateur de se poste.<br />
+Je ne peu donc y installer que des applications portables.<br /></li>
+<li>Il est derrière un proxy qui interdit la plus part des services de cloud.<br />
+Je ne peux donc pas utiliser evernote, onenote ou autres solution du même type.<br />
+J&rsquo;arrive à accéder à <a href="https://simplenote.com/">simplenote</a> que j&rsquo;utilise pour la prise de note rapide.<br /></li>
+<li>Mon téléphone qui est sous Windows.<br />
+Les applications sont donc très limitées.<br />
+Il y a 1 ou deux clients pour simplenote, mais ils ne sont vraiment pas pratiques.<br /></li>
 </ul></li>
 </ul>
 
-<h1 id="utilisation">Utilisation</h1>
-
-<h2 id="en-mode-normal">En mode normal</h2>
+<p>J&rsquo;aimerais une solution:</p>
 
 <ul>
-<li><code>]s</code> va au mot suivant.</li>
-<li><code>[s</code> va au mot précédent.</li>
-<li><code>zg</code> ajoute le mot dans le dictionnaire local.</li>
-<li><code>zG</code> ajoute le mot au dictionnaire global.</li>
-<li><code>z=</code> affiche la liste des propositions.</li>
+<li>simple,<br /></li>
+<li>pas chère,<br /></li>
+<li>ne demandant pas ou peu de maintenance.<br />
+<br /></li>
 </ul>
 
-<h2 id="en-mode-insertion">En mode insertion</h2>
+<p>J&rsquo;ai donc penser à un blog pour répondre aux différentes contraintes d&rsquo;accessibilité.</p>
 
-<p>Il es possible d&rsquo;afficher les propositions en cours de frappe.<br />
-Pour cela, il faut utiliser la complétion <code>Ctrl+X</code>.<br />
-Le mode de complétion utilisé par <code>spell</code> est <code>s</code>.<br />
-Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis <code>s</code>.</p>
+<h1 id="le-moteur-de-blog-hugo">Le moteur de blog : Hugo</h1>
+
+<p>En recherchant une solution, j&rsquo;ai découvert, qu&rsquo;il existant de outils permettant de générer des <a href="https://fr.wikipedia.org/wiki/Site_web#Sites_statiques">sites statiques</a> à partir de simples fichiers textes.</p>
+
+<p>Différents formats de texte sont utilisés. Certaines applications permettent de choisir le format, d&rsquo;autres n&rsquo;en acceptent qu&rsquo;un seul.</p>
+
+<p>Parmi les formats utilisés, le <a href="https://fr.wikipedia.org/wiki/Markdown">markdown</a> est fréquent. Ça tombe bien, je l&rsquo;utilise déjà.</p>
+
+<p>J&rsquo;ai déjà essayé <a href="http://docs.getpelican.com/en/stable/">Pélican</a> mais il nécessite d&rsquo;installer python.<br />
+D&rsquo;ailleurs, la plus part des générateurs de sites statiques nécessite l&rsquo;installation de python, ruby ou autres.</p>
+
+<p>C&rsquo;est là que <a href="https://gohugo.io/">hugo</a> se distingue des autres outils.</p>
+
+<p>Le fait qu&rsquo;il soit écrit en <a href="https://golang.org/">golang</a> permet d&rsquo;avoir:</p>
+
+<ul>
+<li>un simple exécutable à lancer, sans dépendance.<br /></li>
+<li>une application légère et rapide.<br /></li>
+</ul>
+
+<p>Il a également un autre avantage.<br />
+En lançant le serveur de développement intégré à l&rsquo;application, le rendu est automatiquement mis à jour lors de l&rsquo;édition des fichiers.<br />
+Cette mise à jour est presque immédiate.</p>
+
+<h1 id="l-hébergement">L&rsquo;hébergement</h1>
+
+<p>Pour héberger un site statique, tout type de service d&rsquo;hébergement peu être utilisé.<br />
+Il suffit de déposer les fichiers générés sur un serveur web.</p>
+
+<p>Sur le poste professionnel (w2), je ne peu pas installer de client FTP.<br />
+Les choix sont donc très limités.</p>
+
+<p>J&rsquo;ai également besoin de travailler sur le contenu (les fichiers markdown) à partir de mes différents postes.<br />
+Des outils comme Github, bitbucket ou Gitlab sont tout indiqués pour le partager des sources.<br />
+Ils permettent de plus d&rsquo;héberger un site web statique gratuitement.</p>
+
+<p>Ayant déjà un dépôt privé sous bitbucket, je choisi donc d&rsquo;utiliser github pour ce blog.<br />
+Je trouve l&rsquo;interface un peu plus pratique et je n&rsquo;ai pas besoin de dépôt privé pour les sources.</p>
+
+<h1 id="les-éditeurs-de-texte">Les éditeurs de texte</h1>
+
+<p>Pour éditer des fichiers markdown, un simple éditeur de texte suffis.<br />
+De plus, comme dit plus haut, hugo permet de visualiser les modifications en cous d&rsquo;écriture.<br />
+Il n&rsquo;est donc pas utile d&rsquo;utiliser de plugin ou un éditeur spécifiquement prévu pour le markdown pour visualiser du rendu en cours de frappe.</p>
+
+<ul>
+<li>Sous s2 (mubuntu), l&rsquo;éditeur par défaut est pluma. Il est largement suffisant pour cette utilisation.<br />
+
+<ul>
+<li>Il existe un plugin pour<br />
+
+<ul>
+<li>la coloration syntaxique du markdown.<br /></li>
+<li>plier et déplier des blocs de code.<br /></li>
+</ul></li>
+<li>Je parlerai de ces plugins dans un futur article.<br /></li>
+</ul></li>
+<li>Sous w1 (Windows 7), j&rsquo;utilise principalement notepad++.<br />
+
+<ul>
+<li>Il existe également un fichier de définition pour la colorisation du markdown.<br /></li>
+</ul></li>
+<li>vim est utilisable sur les 2 mais je n&rsquo;ai pas le temps de m&rsquo;y remettre et de refaire une config.
+
+<ul>
+<li>Ce point fait parti de ma todo liste.</li>
+</ul></li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Je pense avoir trouvé les outils répondant au besoin.</p>
+
+<p>Il ne me reste plus qu&rsquo;à mettre en place un nouveau blog, pour maintenir mais notes.<br />
+J&rsquo;y ajouterai des articles au fur et à mesure de mes différentes expérimentations ou lectures.<br />
+Je modifierai les articles existants pour les compléter ou les corriger en fonction de mon apprentissage sur les différents points abordés.</p>
+
+<p>La je pense que la création de ce bolg-notes fera l&rsquo;objet de plusieurs articles.</p>
 
 </div>
 
@@ -251,18 +299,12 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="/2015/12/16/pelican-creation-site/" title="Création du blog-notes avec Pélican">
+          <a href="/2016/01/13/vim-correction-orthographe/" title="Correction d&#39;orthographe sous vim">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
-    
-      <li class="next">
-        <a href="/2017/02/24/un-blog-pour-mes-notes/" title="Un blog pour mes notes">
-            Next <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
     
     </ul> </nav>
   
@@ -286,17 +328,11 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
       <header><div class="title">TableOfContents</div></header>
       <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li><a href="#installation">Installation</a>
-<ul>
-<li><a href="#sous-window">Sous window</a></li>
-<li><a href="#sous-linux">Sous linux</a></li>
-</ul></li>
-<li><a href="#paramétrage">Paramétrage</a></li>
-<li><a href="#utilisation">Utilisation</a>
-<ul>
-<li><a href="#en-mode-normal">En mode normal</a></li>
-<li><a href="#en-mode-insertion">En mode insertion</a></li>
-</ul></li>
+<li><a href="#les-contraintes">Les contraintes</a></li>
+<li><a href="#le-moteur-de-blog-hugo">Le moteur de blog : Hugo</a></li>
+<li><a href="#l-hébergement">L&rsquo;hébergement</a></li>
+<li><a href="#les-éditeurs-de-texte">Les éditeurs de texte</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
 </ul>
 </nav></div>
     </div>

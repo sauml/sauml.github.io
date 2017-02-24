@@ -6,8 +6,130 @@
     <description>Recent content in Posts on Sauml Blog Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 13 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Feb 2017 23:25:04 +0100</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Un blog pour mes notes</title>
+      <link>/2017/02/24/un-blog-pour-mes-notes/</link>
+      <pubDate>Fri, 24 Feb 2017 23:25:04 +0100</pubDate>
+      
+      <guid>/2017/02/24/un-blog-pour-mes-notes/</guid>
+      <description>
+
+&lt;p&gt;Je cherche une solution pour sauvegarder mes notes, les rendre accessibles de partout et les modifier des mes différents postes.&lt;/p&gt;
+
+&lt;h1 id=&#34;les-contraintes&#34;&gt;Les contraintes&lt;/h1&gt;
+
+&lt;p&gt;Les postes que j&amp;rsquo;utilise sont principalement:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;S2: mon portable perso actuellement sous mubuntu 16.04 LTS.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;w1: mon portable professionnel sous Windows seven 32bits.&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Je ne suis pas administrateur de se poste.&lt;br /&gt;
+Je ne peu donc y installer que des applications portables.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Il est derrière un proxy qui interdit la plus part des services de cloud.&lt;br /&gt;
+Je ne peux donc pas utiliser evernote, onenote ou autres solution du même type.&lt;br /&gt;
+J&amp;rsquo;arrive à accéder à &lt;a href=&#34;https://simplenote.com/&#34;&gt;simplenote&lt;/a&gt; que j&amp;rsquo;utilise pour la prise de note rapide.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Mon téléphone qui est sous Windows.&lt;br /&gt;
+Les applications sont donc très limitées.&lt;br /&gt;
+Il y a 1 ou deux clients pour simplenote, mais ils ne sont vraiment pas pratiques.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J&amp;rsquo;aimerais une solution:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;simple,&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;pas chère,&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;ne demandant pas ou peu de maintenance.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J&amp;rsquo;ai donc penser à un blog pour répondre aux différentes contraintes d&amp;rsquo;accessibilité.&lt;/p&gt;
+
+&lt;h1 id=&#34;le-moteur-de-blog-hugo&#34;&gt;Le moteur de blog : Hugo&lt;/h1&gt;
+
+&lt;p&gt;En recherchant une solution, j&amp;rsquo;ai découvert, qu&amp;rsquo;il existant de outils permettant de générer des &lt;a href=&#34;https://fr.wikipedia.org/wiki/Site_web#Sites_statiques&#34;&gt;sites statiques&lt;/a&gt; à partir de simples fichiers textes.&lt;/p&gt;
+
+&lt;p&gt;Différents formats de texte sont utilisés. Certaines applications permettent de choisir le format, d&amp;rsquo;autres n&amp;rsquo;en acceptent qu&amp;rsquo;un seul.&lt;/p&gt;
+
+&lt;p&gt;Parmi les formats utilisés, le &lt;a href=&#34;https://fr.wikipedia.org/wiki/Markdown&#34;&gt;markdown&lt;/a&gt; est fréquent. Ça tombe bien, je l&amp;rsquo;utilise déjà.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai déjà essayé &lt;a href=&#34;http://docs.getpelican.com/en/stable/&#34;&gt;Pélican&lt;/a&gt; mais il nécessite d&amp;rsquo;installer python.&lt;br /&gt;
+D&amp;rsquo;ailleurs, la plus part des générateurs de sites statiques nécessite l&amp;rsquo;installation de python, ruby ou autres.&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est là que &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt; se distingue des autres outils.&lt;/p&gt;
+
+&lt;p&gt;Le fait qu&amp;rsquo;il soit écrit en &lt;a href=&#34;https://golang.org/&#34;&gt;golang&lt;/a&gt; permet d&amp;rsquo;avoir:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;un simple exécutable à lancer, sans dépendance.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;une application légère et rapide.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il a également un autre avantage.&lt;br /&gt;
+En lançant le serveur de développement intégré à l&amp;rsquo;application, le rendu est automatiquement mis à jour lors de l&amp;rsquo;édition des fichiers.&lt;br /&gt;
+Cette mise à jour est presque immédiate.&lt;/p&gt;
+
+&lt;h1 id=&#34;l-hébergement&#34;&gt;L&amp;rsquo;hébergement&lt;/h1&gt;
+
+&lt;p&gt;Pour héberger un site statique, tout type de service d&amp;rsquo;hébergement peu être utilisé.&lt;br /&gt;
+Il suffit de déposer les fichiers générés sur un serveur web.&lt;/p&gt;
+
+&lt;p&gt;Sur le poste professionnel (w2), je ne peu pas installer de client FTP.&lt;br /&gt;
+Les choix sont donc très limités.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai également besoin de travailler sur le contenu (les fichiers markdown) à partir de mes différents postes.&lt;br /&gt;
+Des outils comme Github, bitbucket ou Gitlab sont tout indiqués pour le partager des sources.&lt;br /&gt;
+Ils permettent de plus d&amp;rsquo;héberger un site web statique gratuitement.&lt;/p&gt;
+
+&lt;p&gt;Ayant déjà un dépôt privé sous bitbucket, je choisi donc d&amp;rsquo;utiliser github pour ce blog.&lt;br /&gt;
+Je trouve l&amp;rsquo;interface un peu plus pratique et je n&amp;rsquo;ai pas besoin de dépôt privé pour les sources.&lt;/p&gt;
+
+&lt;h1 id=&#34;les-éditeurs-de-texte&#34;&gt;Les éditeurs de texte&lt;/h1&gt;
+
+&lt;p&gt;Pour éditer des fichiers markdown, un simple éditeur de texte suffis.&lt;br /&gt;
+De plus, comme dit plus haut, hugo permet de visualiser les modifications en cous d&amp;rsquo;écriture.&lt;br /&gt;
+Il n&amp;rsquo;est donc pas utile d&amp;rsquo;utiliser de plugin ou un éditeur spécifiquement prévu pour le markdown pour visualiser du rendu en cours de frappe.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sous s2 (mubuntu), l&amp;rsquo;éditeur par défaut est pluma. Il est largement suffisant pour cette utilisation.&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Il existe un plugin pour&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;la coloration syntaxique du markdown.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;plier et déplier des blocs de code.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Je parlerai de ces plugins dans un futur article.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Sous w1 (Windows 7), j&amp;rsquo;utilise principalement notepad++.&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Il existe également un fichier de définition pour la colorisation du markdown.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;vim est utilisable sur les 2 mais je n&amp;rsquo;ai pas le temps de m&amp;rsquo;y remettre et de refaire une config.
+
+&lt;ul&gt;
+&lt;li&gt;Ce point fait parti de ma todo liste.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;Je pense avoir trouvé les outils répondant au besoin.&lt;/p&gt;
+
+&lt;p&gt;Il ne me reste plus qu&amp;rsquo;à mettre en place un nouveau blog, pour maintenir mais notes.&lt;br /&gt;
+J&amp;rsquo;y ajouterai des articles au fur et à mesure de mes différentes expérimentations ou lectures.&lt;br /&gt;
+Je modifierai les articles existants pour les compléter ou les corriger en fonction de mon apprentissage sur les différents points abordés.&lt;/p&gt;
+
+&lt;p&gt;La je pense que la création de ce bolg-notes fera l&amp;rsquo;objet de plusieurs articles.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Correction d&#39;orthographe sous vim</title>
