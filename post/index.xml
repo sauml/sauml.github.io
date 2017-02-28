@@ -6,15 +6,48 @@
     <description>Recent content in Posts on Sauml Blog Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Fri, 24 Feb 2017 23:25:04 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 28 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Hugo Partie 1: Index</title>
+      <link>/2017/02/hugo-1-index/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/hugo-1-index/</guid>
+      <description>
+
+&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/un-blog-pour-mes-notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
+
+&lt;p&gt;Je vais détailler les différentes étapes que je réaliserai pour y arriver.&lt;br /&gt;
+Il y aura donc une série d&amp;rsquo;articles consacrées à la mise en place de ce blog à l&amp;rsquo;aide de Hugo.&lt;br /&gt;
+Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonction de mon avancée dans la découvertes de Hugo.&lt;/p&gt;
+
+&lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hugo Partie 1: Index.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 2: Installer.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 6: Déployer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;lien-intéressant&#34;&gt;Lien intéressant&lt;/h1&gt;
+
+&lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
+
+&lt;p&gt;Le prochain article sera consacrée à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Un blog pour mes notes</title>
-      <link>/2017/02/24/un-blog-pour-mes-notes/</link>
+      <link>/2017/02/un-blog-pour-mes-notes/</link>
       <pubDate>Fri, 24 Feb 2017 23:25:04 +0100</pubDate>
       
-      <guid>/2017/02/24/un-blog-pour-mes-notes/</guid>
+      <guid>/2017/02/un-blog-pour-mes-notes/</guid>
       <description>
 
 &lt;p&gt;Je cherche une solution pour sauvegarder mes notes, les rendre accessibles de partout et les modifier des mes différents postes.&lt;/p&gt;
@@ -123,20 +156,20 @@ Il n&amp;rsquo;est donc pas utile d&amp;rsquo;utiliser de plugin ou un éditeur 
 
 &lt;p&gt;Je pense avoir trouvé les outils répondant au besoin.&lt;/p&gt;
 
-&lt;p&gt;Il ne me reste plus qu&amp;rsquo;à mettre en place un nouveau blog, pour maintenir mais notes.&lt;br /&gt;
+&lt;p&gt;Il ne me reste plus qu&amp;rsquo;à mettre en place un nouveau blog, pour maintenir mes notes.&lt;br /&gt;
 J&amp;rsquo;y ajouterai des articles au fur et à mesure de mes différentes expérimentations ou lectures.&lt;br /&gt;
 Je modifierai les articles existants pour les compléter ou les corriger en fonction de mon apprentissage sur les différents points abordés.&lt;/p&gt;
 
-&lt;p&gt;La je pense que la création de ce bolg-notes fera l&amp;rsquo;objet de plusieurs articles.&lt;/p&gt;
+&lt;p&gt;Je pense que la création de ce bolg-notes fera l&amp;rsquo;objet de plusieurs articles.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Correction d&#39;orthographe sous vim</title>
-      <link>/2016/01/13/vim-correction-orthographe/</link>
+      <link>/2016/01/vim-correction-orthographe/</link>
       <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/01/13/vim-correction-orthographe/</guid>
+      <guid>/2016/01/vim-correction-orthographe/</guid>
       <description>
 
 &lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
@@ -215,15 +248,15 @@ Il suffit donc lorsqu&amp;rsquo;une faute apparait de faire &lt;code&gt;Ctrl+X&l
     
     <item>
       <title>Création du blog-notes avec Pélican</title>
-      <link>/2015/12/16/pelican-creation-site/</link>
+      <link>/2015/12/pelican-creation-site/</link>
       <pubDate>Wed, 16 Dec 2015 22:48:34 +0100</pubDate>
       
-      <guid>/2015/12/16/pelican-creation-site/</guid>
+      <guid>/2015/12/pelican-creation-site/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/15/installation-de-pelican/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/installation-de-pelican/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Cet article concerne la création de ce blog-notes.&lt;/p&gt;
 
@@ -285,7 +318,7 @@ popd
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Pour développer me site en local, lancer:&lt;/p&gt;
+&lt;p&gt;Pour développer le site en local, lancer:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sauml.bitbucket.org&amp;gt;start pelrun.bat
 sauml.bitbucket.org&amp;gt;start pelserve.bat
@@ -328,10 +361,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Test du theme en cours</title>
-      <link>/2015/12/16/test-theme/</link>
+      <link>/2015/12/test-theme/</link>
       <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/16/test-theme/</guid>
+      <guid>/2015/12/test-theme/</guid>
       <description>
 
 &lt;h1 id=&#34;titre-niveau-1&#34;&gt;titre niveau 1&lt;/h1&gt;
@@ -354,10 +387,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Installation de Pélican</title>
-      <link>/2015/12/15/installation-de-pelican/</link>
+      <link>/2015/12/installation-de-pelican/</link>
       <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/15/installation-de-pelican/</guid>
+      <guid>/2015/12/installation-de-pelican/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -399,7 +432,7 @@ Je ne le fais pas pour cette installation qui n&amp;rsquo;est pas définitive.&l
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Tout est en place pour la création d&amp;rsquo;un site.&lt;br /&gt;
-Un exemple est disponible ici: &lt;a href=&#34;/2015/12/16/pelican-creation-site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
+Un exemple est disponible ici: &lt;a href=&#34;/2015/12/pelican-creation-site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

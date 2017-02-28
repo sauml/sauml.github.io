@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Index on Sauml Blog Notes</title>
+    <link>/tags/index/index.xml</link>
+    <description>Recent content in Index on Sauml Blog Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <atom:link href="/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Partie 1: Index</title>
+      <link>/2017/02/hugo-1-index/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/hugo-1-index/</guid>
+      <description>
+
+&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/un-blog-pour-mes-notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
+
+&lt;p&gt;Je vais détailler les différentes étapes que je réaliserai pour y arriver.&lt;br /&gt;
+Il y aura donc une série d&amp;rsquo;articles consacrées à la mise en place de ce blog à l&amp;rsquo;aide de Hugo.&lt;br /&gt;
+Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonction de mon avancée dans la découvertes de Hugo.&lt;/p&gt;
+
+&lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hugo Partie 1: Index.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 2: Installer.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 6: Déployer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;lien-intéressant&#34;&gt;Lien intéressant&lt;/h1&gt;
+
+&lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
+
+&lt;p&gt;Le prochain article sera consacrée à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
