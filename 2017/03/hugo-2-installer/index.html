@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Un blog pour mes notes  &middot; Sauml Blog Notes</title>
+  <title>Hugo Partie 2: Installer  &middot; Sauml Blog Notes</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,27 +14,25 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="blog, hugo, github, ">
+<meta name="keywords" content="hugo, blog, ">
 
 
-<meta property="og:title" content="Un blog pour mes notes  &middot; Sauml Blog Notes ">
+<meta property="og:title" content="Hugo Partie 2: Installer  &middot; Sauml Blog Notes ">
 <meta property="og:site_name" content="Sauml Blog Notes"/>
-<meta property="og:url" content="/2017/02/un-blog-pour-mes-notes/" />
+<meta property="og:url" content="/2017/03/hugo-2-installer/" />
 <meta property="og:locale" content="fr-FR">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2017-02-24T23:25:04&#43;01:00" />
-<meta property="og:article:modified_time" content="2017-02-24T23:25:04&#43;01:00" />
+<meta property="og:article:published_time" content="2017-03-03T22:38:10&#43;01:00" />
+<meta property="og:article:modified_time" content="2017-03-03T22:38:10&#43;01:00" />
 
   
     
-<meta property="og:article:tag" content="blog">
-    
 <meta property="og:article:tag" content="hugo">
     
-<meta property="og:article:tag" content="github">
+<meta property="og:article:tag" content="blog">
     
   
 
@@ -42,9 +40,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Un blog pour mes notes" />
+<meta name="twitter:title" content="Hugo Partie 2: Installer" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="/2017/02/un-blog-pour-mes-notes/" />
+<meta name="twitter:url" content="/2017/03/hugo-2-installer/" />
 <meta name="twitter:domain" content="/">
   
 
@@ -52,20 +50,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Un blog pour mes notes",
+    "headline": "Hugo Partie 2: Installer",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2017-02-24",
+    "datePublished": "2017-03-03",
     "description": "",
-    "wordCount":  642 
+    "wordCount":  415 
   }
 </script>
 
 
 
-<link rel="canonical" href="/2017/02/un-blog-pour-mes-notes/" />
+<link rel="canonical" href="/2017/03/hugo-2-installer/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
 <link rel="icon" href="/favicon.png">
 <meta name="generator" content="Hugo 0.18.1" />
@@ -140,30 +138,28 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>Un blog pour mes notes
+    <h1>Hugo Partie 2: Installer
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2017-02-24">24 Feb, 2017</time>
+  <time datetime="2017-03-03">3 Mar, 2017</time>
 </small>
 
 
   <small>
-  &middot; Read in about 4 min
-  &middot; (642 words)
+  &middot; Read in about 2 min
+  &middot; (415 words)
 </small>
 
 
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="/tags/blog" class="label label-primary">blog</a>
-  
   <a href="/tags/hugo" class="label label-primary">hugo</a>
   
-  <a href="/tags/github" class="label label-primary">github</a>
+  <a href="/tags/blog" class="label label-primary">blog</a>
   
 
 
@@ -177,117 +173,152 @@
       <div class="content">
   
 
-<p>Je cherche une solution pour sauvegarder mes notes, les rendre accessibles de partout et les modifier des mes différents postes.</p>
-
-<h1 id="les-contraintes">Les contraintes</h1>
-
-<p>Les postes que j&rsquo;utilise sont principalement:</p>
+<p>Cet article est le deuxième article de la série consacrée aux étapes que j&rsquo;ai suivies pour mettre en place ce blog avec hugo.</p>
 
 <ul>
-<li>S2: mon portable perso actuellement sous mubuntu 16.04 LTS.<br /></li>
-<li>w1: mon portable professionnel sous Windows seven 32bits.<br />
+<li><a href="/2017/02/hugo-1-index/">Hugo Partie 1: Index.</a></li>
+<li><a href="/2017/03/hugo-2-installer/">Hugo Partie 2: Installer.</a></li>
+<li>Hugo Partie 3: Configurer.</li>
+<li>Hugo Partie 4: Modifier le thème.</li>
+<li>Hugo Partie 5: Gérer les liens.</li>
+<li>Hugo Partie 6: Déployer.</li>
+</ul>
+
+<h1 id="installer-hugo">Installer hugo</h1>
 
 <ul>
-<li>Je ne suis pas administrateur de se poste.<br />
-Je ne peu donc y installer que des applications portables.<br /></li>
-<li>Il est derrière un proxy qui interdit la plus part des services de cloud.<br />
-Je ne peux donc pas utiliser evernote, onenote ou autres solution du même type.<br />
-J&rsquo;arrive à accéder à <a href="https://simplenote.com/">simplenote</a> que j&rsquo;utilise pour la prise de note rapide.<br /></li>
-<li>Mon téléphone qui est sous Windows.<br />
-Les applications sont donc très limitées.<br />
-Il y a 1 ou deux clients pour simplenote, mais ils ne sont vraiment pas pratiques.<br /></li>
+<li>Aller sur la <a href="https://github.com/spf13/hugo/releases">page de téléchargement</a>.<br /></li>
+<li>Récupérer l&rsquo;archive correspondant à:<br />
+
+<ul>
+<li>la dernière version.<br /></li>
+<li>l&rsquo;os.</li>
 </ul></li>
 </ul>
 
-<p>J&rsquo;aimerais une solution:</p>
+<h2 id="sous-s2-ubuntu">Sous S2 - Ubuntu</h2>
 
 <ul>
-<li>simple,<br /></li>
-<li>pas chère,<br /></li>
-<li>ne demandant pas ou peu de maintenance.<br />
-<br /></li>
+<li>Récupérer <code>hugo_0.18.1-64bit.deb</code>.</li>
+<li>installer le package.<br /></li>
 </ul>
 
-<p>J&rsquo;ai donc penser à un blog pour répondre aux différentes contraintes d&rsquo;accessibilité.</p>
-
-<h1 id="le-moteur-de-blog-hugo">Le moteur de blog : Hugo</h1>
-
-<p>En recherchant une solution, j&rsquo;ai découvert, qu&rsquo;il existant de outils permettant de générer des <a href="https://fr.wikipedia.org/wiki/Site_web#Sites_statiques">sites statiques</a> à partir de simples fichiers textes.</p>
-
-<p>Différents formats de texte sont utilisés. Certaines applications permettent de choisir le format, d&rsquo;autres n&rsquo;en acceptent qu&rsquo;un seul.</p>
-
-<p>Parmi les formats utilisés, le <a href="https://fr.wikipedia.org/wiki/Markdown">markdown</a> est fréquent. Ça tombe bien, je l&rsquo;utilise déjà.</p>
-
-<p>J&rsquo;ai déjà essayé <a href="http://docs.getpelican.com/en/stable/">Pélican</a> mais il nécessite d&rsquo;installer python.<br />
-D&rsquo;ailleurs, la plus part des générateurs de sites statiques nécessite l&rsquo;installation de python, ruby ou autres.</p>
-
-<p>C&rsquo;est là que <a href="https://gohugo.io/">hugo</a> se distingue des autres outils.</p>
-
-<p>Le fait qu&rsquo;il soit écrit en <a href="https://golang.org/">golang</a> permet d&rsquo;avoir:</p>
+<pre><code>sudo dpkg -i hugo*.deb
+</code></pre>
 
 <ul>
-<li>un simple exécutable à lancer, sans dépendance.<br /></li>
-<li>une application légère et rapide.<br /></li>
+<li>Vérifier l&rsquo;installation</li>
 </ul>
 
-<p>Il a également un autre avantage.<br />
-En lançant le serveur de développement intégré à l&rsquo;application, le rendu est automatiquement mis à jour lors de l&rsquo;édition des fichiers.<br />
-Cette mise à jour est presque immédiate.</p>
+<pre><code>~$ hugo version
+Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-30T11:05:34+01:00
+</code></pre>
 
-<h1 id="l-hébergement">L&rsquo;hébergement</h1>
-
-<p>Pour héberger un site statique, tout type de service d&rsquo;hébergement peu être utilisé.<br />
-Il suffit de déposer les fichiers générés sur un serveur web.</p>
-
-<p>Sur le poste professionnel (w2), je ne peu pas installer de client FTP.<br />
-Les choix sont donc très limités.</p>
-
-<p>J&rsquo;ai également besoin de travailler sur le contenu (les fichiers markdown) à partir de mes différents postes.<br />
-Des outils comme Github, bitbucket ou Gitlab sont tout indiqués pour le partager des sources.<br />
-Ils permettent de plus d&rsquo;héberger un site web statique gratuitement.</p>
-
-<p>Ayant déjà un dépôt privé sous bitbucket, je choisi donc d&rsquo;utiliser github pour ce blog.<br />
-Je trouve l&rsquo;interface un peu plus pratique et je n&rsquo;ai pas besoin de dépôt privé pour les sources.</p>
-
-<h1 id="les-éditeurs-de-texte">Les éditeurs de texte</h1>
-
-<p>Pour éditer des fichiers markdown, un simple éditeur de texte suffis.<br />
-De plus, comme dit plus haut, hugo permet de visualiser les modifications en cous d&rsquo;écriture.<br />
-Il n&rsquo;est donc pas utile d&rsquo;utiliser de plugin ou un éditeur spécifiquement prévu pour le markdown pour visualiser du rendu en cours de frappe.</p>
+<h2 id="sous-w1-windows-7">Sous W1 - Windows 7</h2>
 
 <ul>
-<li>Sous s2 (mubuntu), l&rsquo;éditeur par défaut est pluma. Il est largement suffisant pour cette utilisation.<br />
+<li>Récupérer hugo_0.18.1_Windows-32bit.zip.<br /></li>
+<li>Dézipper l&rsquo;archive.</li>
+<li>Mettre le fichier hugo.exe dans le path.
 
 <ul>
-<li>Il existe un plugin pour<br />
-
-<ul>
-<li>la coloration syntaxique du markdown.<br /></li>
-<li>plier et déplier des blocs de code.<br /></li>
+<li>Pour W1, copier dans <code>c:\_me\appPortables\</code></li>
+<li>Créer un raccourcis dans<code>c:\_me\bin\</code></li>
 </ul></li>
-<li>Je parlerai de ces plugins dans un futur article.<br /></li>
-</ul></li>
-<li>Sous w1 (Windows 7), j&rsquo;utilise principalement notepad++.<br />
-
-<ul>
-<li>Il existe également un fichier de définition pour la colorisation du markdown.<br /></li>
-</ul></li>
-<li>vim est utilisable sur les 2 mais je n&rsquo;ai pas le temps de m&rsquo;y remettre et de refaire une config.
-
-<ul>
-<li>Ce point fait parti de ma todo liste.</li>
-</ul></li>
+<li>Vérifier l&rsquo;installation.</li>
 </ul>
 
-<h1 id="conclusion">Conclusion</h1>
+<pre><code>c:\ hugo version
+Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-30T11:05:34+01:00
+</code></pre>
 
-<p>Je pense avoir trouvé les outils répondant au besoin.</p>
+<h1 id="créer-un-nouveau-site">Créer un nouveau site</h1>
 
-<p>Il ne me reste plus qu&rsquo;à mettre en place un nouveau blog, pour maintenir mes notes.<br />
-J&rsquo;y ajouterai des articles au fur et à mesure de mes différentes expérimentations ou lectures.<br />
-Je modifierai les articles existants pour les compléter ou les corriger en fonction de mon apprentissage sur les différents points abordés.</p>
+<p>Créer la structure</p>
 
-<p>Je pense que la création de ce bolg-notes fera l&rsquo;objet de plusieurs articles.</p>
+<pre><code>$ hugo new site sauml.github.io
+
+Congratulations! Your new Hugo site is created in /xxx/xxx/sauml.github.io.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/, or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre>
+
+<p>La structure du site est alors crée.</p>
+
+<pre><code>$ tree -L 1
+.
+├── archetypes
+├── content
+├── layouts
+├── static
+├── themes
+└── config.toml
+
+5 directories, 1 files
+
+</code></pre>
+
+<h1 id="installer-un-thème">Installer un thème</h1>
+
+<p>Hugo n&rsquo;installe pas de thème par défaut.<br />
+Il faut donc en choisir un <a href="http://themes.gohugo.io/">ici</a> et l&rsquo;installer.</p>
+
+<pre><code>$ cd sauml.github.io/themes/
+$ git clone https://github.com/appernetic/hugo-bootstrap-premium
+</code></pre>
+
+<h1 id="premier-post">Premier post</h1>
+
+<p>Il est maintenant possible de créer le premier post.</p>
+
+<pre><code>$ hugo new post/Mon-post.md
+</code></pre>
+
+<p>Un fichier <code>Mon-post.md</code> est créé dans <code>sauml.github.io/content/post/</code><br />
+Le contenu du fichier est le suivant:</p>
+
+<pre><code>+++
+date = &quot;2017-03-03T22:38:10+01:00&quot;
+draft = true
+title = &quot;Mon Post&quot;
+
++++
+
+</code></pre>
+
+<p>Ces lignes corresponde à l&rsquo;en-tête du fichier.<br />
+Il suffit de saisir le contenu après cette zone.</p>
+
+<h1 id="visualiser-le-résultat">Visualiser le résultat</h1>
+
+<p>Se placer à la racine du site.</p>
+
+<pre><code>$ cd /xxx/xxx/sauml.github.io 
+</code></pre>
+
+<p>Démarrer le serveur de tests</p>
+
+<pre><code>$ hugo server -D
+</code></pre>
+
+<p>Le paramètre <code>-D (--buidDraft)</code> permet de voir les post notés comme brouillons.</p>
+
+<p>Le site est maintenant visible à l&rsquo;adresse <a href="http://localhost:1313">http://localhost:1313</a>.<br />
+Le contenu est mis çà jour automatiquement à chaque modification.<br />
+Ce qui est particulièrement intéressant lors de la saisie d&rsquo;un article, car les modifications sont visibles à chaque enregistrement du fichier source.</p>
+
+<h1 id="a-suivre">A suivre &hellip;</h1>
+
+<p>Le prochain article sera consacré au paramétrage du site.</p>
 
 </div>
 
@@ -299,18 +330,12 @@ Je modifierai les articles existants pour les compléter ou les corriger en fonc
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="/2016/01/vim-correction-orthographe/" title="Correction d&#39;orthographe sous vim">
+          <a href="/2017/02/hugo-1-index/" title="Hugo Partie 1: Index">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
-    
-      <li class="next">
-        <a href="/2017/02/hugo-1-index/" title="Hugo Partie 1: Index">
-            Next <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
     
     </ul> </nav>
   
@@ -334,11 +359,16 @@ Je modifierai les articles existants pour les compléter ou les corriger en fonc
       <header><div class="title">TableOfContents</div></header>
       <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li><a href="#les-contraintes">Les contraintes</a></li>
-<li><a href="#le-moteur-de-blog-hugo">Le moteur de blog : Hugo</a></li>
-<li><a href="#l-hébergement">L&rsquo;hébergement</a></li>
-<li><a href="#les-éditeurs-de-texte">Les éditeurs de texte</a></li>
-<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#installer-hugo">Installer hugo</a>
+<ul>
+<li><a href="#sous-s2-ubuntu">Sous S2 - Ubuntu</a></li>
+<li><a href="#sous-w1-windows-7">Sous W1 - Windows 7</a></li>
+</ul></li>
+<li><a href="#créer-un-nouveau-site">Créer un nouveau site</a></li>
+<li><a href="#installer-un-thème">Installer un thème</a></li>
+<li><a href="#premier-post">Premier post</a></li>
+<li><a href="#visualiser-le-résultat">Visualiser le résultat</a></li>
+<li><a href="#a-suivre">A suivre &hellip;</a></li>
 </ul>
 </nav></div>
     </div>

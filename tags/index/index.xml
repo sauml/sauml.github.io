@@ -25,19 +25,23 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 &lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Hugo Partie 1: Index.&lt;/li&gt;
-&lt;li&gt;Hugo Partie 2: Installer.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 6: Déployer.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;lien-intéressant&#34;&gt;Lien intéressant&lt;/h1&gt;
+&lt;h1 id=&#34;liens-intéressants&#34;&gt;Liens intéressants&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Site Officiel &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
 
-&lt;p&gt;Le prochain article sera consacrée à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
 </description>
     </item>
     

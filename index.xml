@@ -6,8 +6,165 @@
     <description>Recent content on Sauml Blog Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Tue, 28 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Mar 2017 22:38:10 +0100</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Partie 2: Installer</title>
+      <link>/2017/03/hugo-2-installer/</link>
+      <pubDate>Fri, 03 Mar 2017 22:38:10 +0100</pubDate>
+      
+      <guid>/2017/03/hugo-2-installer/</guid>
+      <description>
+
+&lt;p&gt;Cet article est le deuxième article de la série consacrée aux étapes que j&amp;rsquo;ai suivies pour mettre en place ce blog avec hugo.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 6: Déployer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;installer-hugo&#34;&gt;Installer hugo&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Aller sur la &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;page de téléchargement&lt;/a&gt;.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Récupérer l&amp;rsquo;archive correspondant à:&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;la dernière version.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;l&amp;rsquo;os.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sous-s2-ubuntu&#34;&gt;Sous S2 - Ubuntu&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Récupérer &lt;code&gt;hugo_0.18.1-64bit.deb&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;installer le package.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i hugo*.deb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vérifier l&amp;rsquo;installation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ hugo version
+Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-30T11:05:34+01:00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;sous-w1-windows-7&#34;&gt;Sous W1 - Windows 7&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Récupérer hugo_0.18.1_Windows-32bit.zip.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Dézipper l&amp;rsquo;archive.&lt;/li&gt;
+&lt;li&gt;Mettre le fichier hugo.exe dans le path.
+
+&lt;ul&gt;
+&lt;li&gt;Pour W1, copier dans &lt;code&gt;c:\_me\appPortables\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Créer un raccourcis dans&lt;code&gt;c:\_me\bin\&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Vérifier l&amp;rsquo;installation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;c:\ hugo version
+Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-30T11:05:34+01:00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;créer-un-nouveau-site&#34;&gt;Créer un nouveau site&lt;/h1&gt;
+
+&lt;p&gt;Créer la structure&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new site sauml.github.io
+
+Congratulations! Your new Hugo site is created in /xxx/xxx/sauml.github.io.
+
+Just a few more steps and you&#39;re ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/, or
+   create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;quot;.
+3. Start the built-in live server via &amp;quot;hugo server&amp;quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;La structure du site est alors crée.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ tree -L 1
+.
+├── archetypes
+├── content
+├── layouts
+├── static
+├── themes
+└── config.toml
+
+5 directories, 1 files
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;installer-un-thème&#34;&gt;Installer un thème&lt;/h1&gt;
+
+&lt;p&gt;Hugo n&amp;rsquo;installe pas de thème par défaut.&lt;br /&gt;
+Il faut donc en choisir un &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;ici&lt;/a&gt; et l&amp;rsquo;installer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd sauml.github.io/themes/
+$ git clone https://github.com/appernetic/hugo-bootstrap-premium
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;premier-post&#34;&gt;Premier post&lt;/h1&gt;
+
+&lt;p&gt;Il est maintenant possible de créer le premier post.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new post/Mon-post.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Un fichier &lt;code&gt;Mon-post.md&lt;/code&gt; est créé dans &lt;code&gt;sauml.github.io/content/post/&lt;/code&gt;&lt;br /&gt;
+Le contenu du fichier est le suivant:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2017-03-03T22:38:10+01:00&amp;quot;
+draft = true
+title = &amp;quot;Mon Post&amp;quot;
+
++++
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ces lignes corresponde à l&amp;rsquo;en-tête du fichier.&lt;br /&gt;
+Il suffit de saisir le contenu après cette zone.&lt;/p&gt;
+
+&lt;h1 id=&#34;visualiser-le-résultat&#34;&gt;Visualiser le résultat&lt;/h1&gt;
+
+&lt;p&gt;Se placer à la racine du site.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /xxx/xxx/sauml.github.io 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Démarrer le serveur de tests&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Le paramètre &lt;code&gt;-D (--buidDraft)&lt;/code&gt; permet de voir les post notés comme brouillons.&lt;/p&gt;
+
+&lt;p&gt;Le site est maintenant visible à l&amp;rsquo;adresse &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;.&lt;br /&gt;
+Le contenu est mis çà jour automatiquement à chaque modification.&lt;br /&gt;
+Ce qui est particulièrement intéressant lors de la saisie d&amp;rsquo;un article, car les modifications sont visibles à chaque enregistrement du fichier source.&lt;/p&gt;
+
+&lt;h1 id=&#34;a-suivre&#34;&gt;A suivre &amp;hellip;&lt;/h1&gt;
+
+&lt;p&gt;Le prochain article sera consacré au paramétrage du site.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugo Partie 1: Index</title>
@@ -26,19 +183,23 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 &lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Hugo Partie 1: Index.&lt;/li&gt;
-&lt;li&gt;Hugo Partie 2: Installer.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 6: Déployer.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;lien-intéressant&#34;&gt;Lien intéressant&lt;/h1&gt;
+&lt;h1 id=&#34;liens-intéressants&#34;&gt;Liens intéressants&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Site Officiel &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
 
-&lt;p&gt;Le prochain article sera consacrée à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
 </description>
     </item>
     
