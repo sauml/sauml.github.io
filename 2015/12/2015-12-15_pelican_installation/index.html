@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Création du blog-notes avec Pélican  &middot; Sauml Blog Notes</title>
+  <title>Installation de Pélican  &middot; Sauml Blog Notes</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,19 +14,19 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="pelican, blog, ">
+<meta name="keywords" content="pelican, blog, installation, ">
 
 
-<meta property="og:title" content="Création du blog-notes avec Pélican  &middot; Sauml Blog Notes ">
+<meta property="og:title" content="Installation de Pélican  &middot; Sauml Blog Notes ">
 <meta property="og:site_name" content="Sauml Blog Notes"/>
-<meta property="og:url" content="/2015/12/pelican-creation-site/" />
+<meta property="og:url" content="/2015/12/2015-12-15_pelican_installation/" />
 <meta property="og:locale" content="fr-FR">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2015-12-16T22:48:34&#43;01:00" />
-<meta property="og:article:modified_time" content="2015-12-16T22:48:34&#43;01:00" />
+<meta property="og:article:published_time" content="2015-12-15T00:00:00Z" />
+<meta property="og:article:modified_time" content="2015-12-15T00:00:00Z" />
 
   
     
@@ -34,15 +34,17 @@
     
 <meta property="og:article:tag" content="blog">
     
+<meta property="og:article:tag" content="installation">
+    
   
 
   
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Création du blog-notes avec Pélican" />
+<meta name="twitter:title" content="Installation de Pélican" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="/2015/12/pelican-creation-site/" />
+<meta name="twitter:url" content="/2015/12/2015-12-15_pelican_installation/" />
 <meta name="twitter:domain" content="/">
   
 
@@ -50,20 +52,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Création du blog-notes avec Pélican",
+    "headline": "Installation de Pélican",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2015-12-16",
+    "datePublished": "2015-12-15",
     "description": "",
-    "wordCount":  401 
+    "wordCount":  146 
   }
 </script>
 
 
 
-<link rel="canonical" href="/2015/12/pelican-creation-site/" />
+<link rel="canonical" href="/2015/12/2015-12-15_pelican_installation/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
 <link rel="icon" href="/favicon.png">
 <meta name="generator" content="Hugo 0.18.1" />
@@ -138,19 +140,19 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>Création du blog-notes avec Pélican
+    <h1>Installation de Pélican
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2015-12-16">16 Dec, 2015</time>
+  <time datetime="2015-12-15">15 Dec, 2015</time>
 </small>
 
 
   <small>
-  &middot; Read in about 2 min
-  &middot; (401 words)
+  &middot; Read in about 1 min
+  &middot; (146 words)
 </small>
 
 
@@ -160,6 +162,8 @@
   <a href="/tags/pelican" class="label label-primary">pelican</a>
   
   <a href="/tags/blog" class="label label-primary">blog</a>
+  
+  <a href="/tags/installation" class="label label-primary">installation</a>
   
 
 
@@ -175,106 +179,44 @@
 
 <h1 id="introduction">Introduction</h1>
 
-<p>La création de la structure du site est détaillée ici: <a href="/2015/12/installation-de-pelican/">Installation de Pélican</a></p>
+<p>Pélican est un générateur de site statique écrit en python.</p>
 
-<p>Cet article concerne la création de ce blog-notes.</p>
+<p>Un générateur de site statique permet de générer en site constitué de pages
+html à partir de fichiers texte saisis dans différents formats Markdown,
+reStructuredText, &hellip;</p>
 
-<h2 id="création-du-site">Création du site</h2>
+<p>Il est facile d&rsquo;héberger le site généré sur github ou bitbucket par exemple.</p>
 
-<pre><code>C:\Applis\Wiki\pelican\pelican&gt;pelican-quickstart
-Welcome to pelican-quickstart v3.6.3.
+<h1 id="installation">Installation</h1>
 
-This script will help you create a new Pelican-based website.
+<p>Python et pip doivent être installés.
+Il suffit de lancer.</p>
 
-Please answer the following questions so this script can generate the files
-needed by Pelican.
-
-&gt; Where do you want to create your new web site? [.] sauml.bitbucket.org
-&gt; What will be the title of this web site? Mes Notes
-&gt; Who will be the author of this web site? sauml
-&gt; What will be the default language of this web site? [en] fr
-&gt; Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
-&gt; What is your URL prefix? (see above example; no trailing slash) http://sauml.b
-itbucket.org/
-&gt; Do you want to enable article pagination? (Y/n)
-&gt; How many articles per page do you want? [10]
-&gt; What is your time zone? [Europe/Paris]
-&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishi
-ng? (Y/n)
-&gt; Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site d
-evelopment? (Y/n)
-&gt; Do you want to upload your website using FTP? (y/N)
-&gt; Do you want to upload your website using SSH? (y/N)
-&gt; Do you want to upload your website using Dropbox? (y/N)
-&gt; Do you want to upload your website using S3? (y/N)
-&gt; Do you want to upload your website using Rackspace Cloud Files? (y/N)
-&gt; Do you want to upload your website using GitHub Pages? (y/N)
-Done. Your new project is available at C:\Applis\Wiki\pelican\pelican\sauml.bitb
-ucket.org
+<pre><code>pip install pelican
 </code></pre>
 
-<h1 id="création-des-lanceurs-pour-windows">Création des lanceurs pour windows</h1>
+<p>Il est préférable de l&rsquo;installé dans un environnement virtuel
+python.<br />
+Je ne le fais pas pour cette installation qui n&rsquo;est pas définitive.</p>
 
-<p>Dans le répertoire sauml.bitbucket.org
-Créer les fichiers suivants:</p>
+<h1 id="création-des-répertoires-de-travail">Création des répertoires de travail</h1>
+
+<p>Je crée les répertoires suivants:</p>
 
 <ul>
-<li><p><code>pelrun.bat</code> pour générer le contenu du site de debug dans le dossier output</p>
-
-<pre><code>pelican content --debug --autoreload  --output output --settings pelicanconf.py
-</code></pre></li>
-
-<li><p><code>pelserve.bat</code> pour lancer le site de debug</p>
-
-<pre><code>pushd output
-python -m pelican.server
-popd
-</code></pre></li>
-
-<li><p><code>pelpub.bat</code> pour générer le site de production dans le dossier output</p>
-
-<pre><code>pelican content --output output --settings publishconf.py
-</code></pre></li>
+<li><code>pelican</code> qui contiendra tous les éléments relatifs à pélican.<br /></li>
+<li><code>pelican-themes</code> qui permettra de récupérer tous les thèmes pélicans.<br /></li>
+<li><code>sauml.bitbucket.org</code> qui correspond à ce blog-notes.<br /></li>
 </ul>
 
-<p>Pour développer le site en local, lancer:</p>
-
-<pre><code>sauml.bitbucket.org&gt;start pelrun.bat
-sauml.bitbucket.org&gt;start pelserve.bat
+<pre><code>./pelican
+├── pelican-plugins
+├── pelican-themes
+└── sauml.bitbucket.org
 </code></pre>
 
-<p>Le site est disponible à l&rsquo;url <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p>
-
-<h1 id="configuration">Configuration</h1>
-
-<ul>
-<li>Dé-commenter <code>RELATIVE_URLS = True</code> dans <code>pelicanconf.py</code></li>
-<li>Mettre <code>DELETE_OUTPUT_DIRECTORY = False</code> dans <code>publishconf.py</code> pour ne pas supprimer le dépôt git dans output.</li>
-</ul>
-
-<h2 id="thèmes">Thèmes</h2>
-
-<p>Récupérer les thèmes existants:</p>
-
-<pre><code>pelican&gt;git clone https://github.com/getpelican/pelican-themes.git
-</code></pre>
-
-<p>Définir le thème choisi dans pelicanconf.py</p>
-
-<pre><code>THEME = &quot;../pelican-themes/foundation-default-colours&quot;
-</code></pre>
-
-<h2 id="plugins">Plugins</h2>
-
-<p>Pour les récupérer</p>
-
-<pre><code>pelican&gt;git clone https://github.com/getpelican/pelican-plugins.git
-</code></pre>
-
-<p>Puis dans pelicanconf.py</p>
-
-<pre><code>PLUGIN_PATH = '../pelican-plugins'
-</code></pre>
+<p>Tout est en place pour la création d&rsquo;un site.<br />
+Un exemple est disponible ici: <a href="/2015/12/2015-12-16_pelican_creation_site/">Création du blog-notes avec Pélican</a></p>
 
 </div>
 
@@ -285,16 +227,10 @@ sauml.bitbucket.org&gt;start pelserve.bat
   
     <nav><ul class="pager">
     
-        <li class="previous">
-          <a href="/2015/12/test-theme/" title="Test du theme en cours">
-            <span aria-hidden="true">&larr;</span>Previous
-          </a>
-        </li>
-    
 
     
       <li class="next">
-        <a href="/2016/01/vim-correction-orthographe/" title="Correction d&#39;orthographe sous vim">
+        <a href="/2015/12/2015-12-16_theme_tests/" title="Test du theme en cours">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>
@@ -315,22 +251,15 @@ sauml.bitbucket.org&gt;start pelserve.bat
     </div>
     
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div class="sidebar-nav-fixed affix">
+        <div>
   
     <div class="section">
       <header><div class="title">TableOfContents</div></header>
       <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li><a href="#introduction">Introduction</a>
-<ul>
-<li><a href="#création-du-site">Création du site</a></li>
-</ul></li>
-<li><a href="#création-des-lanceurs-pour-windows">Création des lanceurs pour windows</a></li>
-<li><a href="#configuration">Configuration</a>
-<ul>
-<li><a href="#thèmes">Thèmes</a></li>
-<li><a href="#plugins">Plugins</a></li>
-</ul></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#création-des-répertoires-de-travail">Création des répertoires de travail</a></li>
 </ul>
 </nav></div>
     </div>
@@ -342,31 +271,35 @@ sauml.bitbucket.org&gt;start pelserve.bat
         <ul>
         
           <li>
-          <a href="/2017/03/hugo-2-installer/">Hugo Partie 2: Installer</a>
+          <a href="/2017/03/2017-03-04_installer_hp_8710_sur_s2/">Installer imprimante HP 8710 sur S2</a>
           </li>
         
           <li>
-          <a href="/2017/02/hugo-1-index/">Hugo Partie 1: Index</a>
+          <a href="/2017/03/2017-03-03_hugo_2_installer/">Hugo Partie 2: Installer</a>
           </li>
         
           <li>
-          <a href="/2017/02/un-blog-pour-mes-notes/">Un blog pour mes notes</a>
+          <a href="/2017/02/2017-02-28_hugo_1-index/">Hugo Partie 1: Index</a>
           </li>
         
           <li>
-          <a href="/2016/01/vim-correction-orthographe/">Correction d&#39;orthographe sous vim</a>
+          <a href="/2017/02/2017-02-24_un_blog_pour_mes_notes/">Un blog pour mes notes</a>
           </li>
         
           <li>
-          <a href="/2015/12/pelican-creation-site/">Création du blog-notes avec Pélican</a>
+          <a href="/2016/01/2016-01-13_vim_correction_othographe/">Correction d&#39;orthographe sous vim</a>
           </li>
         
           <li>
-          <a href="/2015/12/test-theme/">Test du theme en cours</a>
+          <a href="/2015/12/2015-12-16_pelican_creation_site/">Création du blog-notes avec Pélican</a>
           </li>
         
           <li>
-          <a href="/2015/12/installation-de-pelican/">Installation de Pélican</a>
+          <a href="/2015/12/2015-12-16_theme_tests/">Test du theme en cours</a>
+          </li>
+        
+          <li>
+          <a href="/2015/12/2015-12-15_pelican_installation/">Installation de Pélican</a>
           </li>
         
         </ul>
@@ -381,7 +314,7 @@ sauml.bitbucket.org&gt;start pelserve.bat
 
         <div class="content">
           <ul>
-            <li><a href="/tags/blog">blog</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/github">github</a></li><li><a href="/tags/index">index</a></li><li><a href="/tags/vim">vim</a></li>
+            <li><a href="/tags/blog">blog</a></li><li><a href="/tags/installation">installation</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/github">github</a></li><li><a href="/tags/index">index</a></li><li><a href="/tags/s2">s2</a></li><li><a href="/tags/vim">vim</a></li>
           </ul>
         </div>
       </div>

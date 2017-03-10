@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S2 on Sauml Blog Notes</title>
+    <link>/tags/s2/index.xml</link>
+    <description>Recent content in S2 on Sauml Blog Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <atom:link href="/tags/s2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installer imprimante HP 8710 sur S2</title>
+      <link>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</link>
+      <pubDate>Sat, 04 Mar 2017 21:26:41 +0100</pubDate>
+      
+      <guid>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai besoin d&amp;rsquo;imprimer sur une imprimante HP 8710 à partir de S2 (mubuntu 16.04).&lt;br /&gt;
+L&amp;rsquo;imprimante est reconnue mais le driver mais il n&amp;rsquo;y a pas le driver.&lt;br /&gt;
+Il va donc falloir l&amp;rsquo;installer.&lt;/p&gt;
+
+&lt;p&gt;HPLIP est l&amp;rsquo;utilitaire de gestions des imprimantes HP.&lt;/p&gt;
+
+&lt;p&gt;Pour savoir si l&amp;rsquo;imprimante est gérée par HPLIP il faut:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/supported_devices/index.html&#34;&gt;page&lt;/a&gt;,&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;rechercher l&amp;rsquo;imprimante&lt;/li&gt;
+&lt;li&gt;récupérer la version minimal de HPLIP nécessaire.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour la 8710, il faut la 3.16.5 minimum.&lt;/p&gt;
+
+&lt;p&gt;Pour connaître la version actuellement installée:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ dpkg -l hplip
+
+Souhait=inconnU/Installé/suppRimé/Purgé/H=à garder
+| État=Non/Installé/fichier-Config/dépaqUeté/échec-conFig/H=semi-installé/W=attend-traitement-déclenchements
+|/ Err?=(aucune)/besoin Réinstallation (État,Err: majuscule=mauvais)
+||/ Nom            Version      Architecture Description
++++-==============-============-============-=================================
+rc  hplip          3.15.2+repac amd64        HP Linux Printing and Imaging Sys
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C&amp;rsquo;est la 3.15.2.&lt;br /&gt;
+Il faut la mettre à jour.&lt;/p&gt;
+
+&lt;p&gt;On vérifie la dernière version disponible dans le dépôt.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ apt-cache policy hplip
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C&amp;rsquo;est la 3.16.3.&lt;/p&gt;
+
+&lt;p&gt;Reste à installer la dernière version disponible à partir du site de HP.&lt;/p&gt;
+
+&lt;p&gt;Aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/downloads.html&#34;&gt;page&lt;/a&gt;.&lt;br /&gt;
+Il y a un bouton &amp;ldquo;télécharger&amp;rdquo; vers le bas.&lt;br /&gt;
+Après téléchargement, un  fichier &lt;code&gt;hplip-3.16.11.run&lt;/code&gt; est présent dans &lt;code&gt;/home/xxx/Téléchargements&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exécuter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ cd Téléchargements/
+~$ sh hplip-3.16.11.run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Répondre aux questions.&lt;br /&gt;
+L&amp;rsquo;imprimante est configurée à la fin de l&amp;rsquo;installation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

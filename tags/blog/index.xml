@@ -10,17 +10,17 @@
     
     <item>
       <title>Hugo Partie 2: Installer</title>
-      <link>/2017/03/hugo-2-installer/</link>
+      <link>/2017/03/2017-03-03_hugo_2_installer/</link>
       <pubDate>Fri, 03 Mar 2017 22:38:10 +0100</pubDate>
       
-      <guid>/2017/03/hugo-2-installer/</guid>
+      <guid>/2017/03/2017-03-03_hugo_2_installer/</guid>
       <description>
 
 &lt;p&gt;Cet article est le deuxième article de la série consacrée aux étapes que j&amp;rsquo;ai suivies pour mettre en place ce blog avec hugo.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/2017-02-28_hugo_1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
@@ -167,13 +167,13 @@ Ce qui est particulièrement intéressant lors de la saisie d&amp;rsquo;un artic
     
     <item>
       <title>Hugo Partie 1: Index</title>
-      <link>/2017/02/hugo-1-index/</link>
+      <link>/2017/02/2017-02-28_hugo_1-index/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/02/hugo-1-index/</guid>
+      <guid>/2017/02/2017-02-28_hugo_1-index/</guid>
       <description>
 
-&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/un-blog-pour-mes-notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
+&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/2017-02-24_un_blog_pour_mes_notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
 
 &lt;p&gt;Je vais détailler les différentes étapes que je réaliserai pour y arriver.&lt;br /&gt;
 Il y aura donc une série d&amp;rsquo;articles consacrées à la mise en place de ce blog à l&amp;rsquo;aide de Hugo.&lt;br /&gt;
@@ -182,8 +182,8 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 &lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/2017-02-28_hugo_1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
@@ -198,16 +198,16 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 
 &lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
 
-&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Un blog pour mes notes</title>
-      <link>/2017/02/un-blog-pour-mes-notes/</link>
+      <link>/2017/02/2017-02-24_un_blog_pour_mes_notes/</link>
       <pubDate>Fri, 24 Feb 2017 23:25:04 +0100</pubDate>
       
-      <guid>/2017/02/un-blog-pour-mes-notes/</guid>
+      <guid>/2017/02/2017-02-24_un_blog_pour_mes_notes/</guid>
       <description>
 
 &lt;p&gt;Je cherche une solution pour sauvegarder mes notes, les rendre accessibles de partout et les modifier des mes différents postes.&lt;/p&gt;
@@ -326,15 +326,15 @@ Je modifierai les articles existants pour les compléter ou les corriger en fonc
     
     <item>
       <title>Création du blog-notes avec Pélican</title>
-      <link>/2015/12/pelican-creation-site/</link>
+      <link>/2015/12/2015-12-16_pelican_creation_site/</link>
       <pubDate>Wed, 16 Dec 2015 22:48:34 +0100</pubDate>
       
-      <guid>/2015/12/pelican-creation-site/</guid>
+      <guid>/2015/12/2015-12-16_pelican_creation_site/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/installation-de-pelican/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/2015-12-15_pelican_installation/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Cet article concerne la création de ce blog-notes.&lt;/p&gt;
 
@@ -439,10 +439,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Test du theme en cours</title>
-      <link>/2015/12/test-theme/</link>
+      <link>/2015/12/2015-12-16_theme_tests/</link>
       <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/test-theme/</guid>
+      <guid>/2015/12/2015-12-16_theme_tests/</guid>
       <description>
 
 &lt;h1 id=&#34;titre-niveau-1&#34;&gt;titre niveau 1&lt;/h1&gt;
@@ -465,10 +465,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Installation de Pélican</title>
-      <link>/2015/12/installation-de-pelican/</link>
+      <link>/2015/12/2015-12-15_pelican_installation/</link>
       <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/installation-de-pelican/</guid>
+      <guid>/2015/12/2015-12-15_pelican_installation/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -510,7 +510,7 @@ Je ne le fais pas pour cette installation qui n&amp;rsquo;est pas définitive.&l
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Tout est en place pour la création d&amp;rsquo;un site.&lt;br /&gt;
-Un exemple est disponible ici: &lt;a href=&#34;/2015/12/pelican-creation-site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
+Un exemple est disponible ici: &lt;a href=&#34;/2015/12/2015-12-16_pelican_creation_site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

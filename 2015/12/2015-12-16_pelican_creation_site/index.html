@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Correction d&#39;orthographe sous vim  &middot; Sauml Blog Notes</title>
+  <title>Création du blog-notes avec Pélican  &middot; Sauml Blog Notes</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,23 +14,25 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="vim, ">
+<meta name="keywords" content="pelican, blog, ">
 
 
-<meta property="og:title" content="Correction d&#39;orthographe sous vim  &middot; Sauml Blog Notes ">
+<meta property="og:title" content="Création du blog-notes avec Pélican  &middot; Sauml Blog Notes ">
 <meta property="og:site_name" content="Sauml Blog Notes"/>
-<meta property="og:url" content="/2016/01/vim-correction-orthographe/" />
+<meta property="og:url" content="/2015/12/2015-12-16_pelican_creation_site/" />
 <meta property="og:locale" content="fr-FR">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2016-01-13T00:00:00Z" />
-<meta property="og:article:modified_time" content="2016-01-13T00:00:00Z" />
+<meta property="og:article:published_time" content="2015-12-16T22:48:34&#43;01:00" />
+<meta property="og:article:modified_time" content="2015-12-16T22:48:34&#43;01:00" />
 
   
     
-<meta property="og:article:tag" content="vim">
+<meta property="og:article:tag" content="pelican">
+    
+<meta property="og:article:tag" content="blog">
     
   
 
@@ -38,9 +40,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Correction d&#39;orthographe sous vim" />
+<meta name="twitter:title" content="Création du blog-notes avec Pélican" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="/2016/01/vim-correction-orthographe/" />
+<meta name="twitter:url" content="/2015/12/2015-12-16_pelican_creation_site/" />
 <meta name="twitter:domain" content="/">
   
 
@@ -48,20 +50,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Correction d\x27orthographe sous vim",
+    "headline": "Création du blog-notes avec Pélican",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2016-01-13",
+    "datePublished": "2015-12-16",
     "description": "",
-    "wordCount":  172 
+    "wordCount":  401 
   }
 </script>
 
 
 
-<link rel="canonical" href="/2016/01/vim-correction-orthographe/" />
+<link rel="canonical" href="/2015/12/2015-12-16_pelican_creation_site/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
 <link rel="icon" href="/favicon.png">
 <meta name="generator" content="Hugo 0.18.1" />
@@ -136,26 +138,28 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>Correction d&#39;orthographe sous vim
+    <h1>Création du blog-notes avec Pélican
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2016-01-13">13 Jan, 2016</time>
+  <time datetime="2015-12-16">16 Dec, 2015</time>
 </small>
 
 
   <small>
-  &middot; Read in about 1 min
-  &middot; (172 words)
+  &middot; Read in about 2 min
+  &middot; (401 words)
 </small>
 
 
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="/tags/vim" class="label label-primary">vim</a>
+  <a href="/tags/pelican" class="label label-primary">pelican</a>
+  
+  <a href="/tags/blog" class="label label-primary">blog</a>
   
 
 
@@ -169,77 +173,108 @@
       <div class="content">
   
 
-<h1 id="installation">Installation</h1>
+<h1 id="introduction">Introduction</h1>
+
+<p>La création de la structure du site est détaillée ici: <a href="/2015/12/2015-12-15_pelican_installation/">Installation de Pélican</a></p>
+
+<p>Cet article concerne la création de ce blog-notes.</p>
+
+<h2 id="création-du-site">Création du site</h2>
+
+<pre><code>C:\Applis\Wiki\pelican\pelican&gt;pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will help you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+&gt; Where do you want to create your new web site? [.] sauml.bitbucket.org
+&gt; What will be the title of this web site? Mes Notes
+&gt; Who will be the author of this web site? sauml
+&gt; What will be the default language of this web site? [en] fr
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   (Y/n)
+&gt; What is your URL prefix? (see above example; no trailing slash) http://sauml.b
+itbucket.org/
+&gt; Do you want to enable article pagination? (Y/n)
+&gt; How many articles per page do you want? [10]
+&gt; What is your time zone? [Europe/Paris]
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishi
+ng? (Y/n)
+&gt; Do you want an auto-reload &amp; simpleHTTP script to assist with theme and site d
+evelopment? (Y/n)
+&gt; Do you want to upload your website using FTP? (y/N)
+&gt; Do you want to upload your website using SSH? (y/N)
+&gt; Do you want to upload your website using Dropbox? (y/N)
+&gt; Do you want to upload your website using S3? (y/N)
+&gt; Do you want to upload your website using Rackspace Cloud Files? (y/N)
+&gt; Do you want to upload your website using GitHub Pages? (y/N)
+Done. Your new project is available at C:\Applis\Wiki\pelican\pelican\sauml.bitb
+ucket.org
+</code></pre>
+
+<h1 id="création-des-lanceurs-pour-windows">Création des lanceurs pour windows</h1>
+
+<p>Dans le répertoire sauml.bitbucket.org
+Créer les fichiers suivants:</p>
 
 <ul>
-<li>Fermer vim</li>
-</ul>
+<li><p><code>pelrun.bat</code> pour générer le contenu du site de debug dans le dossier output</p>
 
-<h2 id="sous-window">Sous window</h2>
-
-<ul>
-<li><p>Aller dans le répertoire des langues vim</p>
-
-<pre><code>cd C:\Program Files\Vim\vim74\spell
+<pre><code>pelican content --debug --autoreload  --output output --settings pelicanconf.py
 </code></pre></li>
 
-<li><p>Télécharger les fichiers de traduction.<br />
-Penser à paramétrer le proxy si besoin <code>set et HTTP_PROXY=http://...</code></p>
+<li><p><code>pelserve.bat</code> pour lancer le site de debug</p>
 
-<pre><code>curl -o fr.latin1.spl http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
-curl -o fr.latin1.sug http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
-curl -o fr.utf-8.spl http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
-curl -o fr.utf-8.sug http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+<pre><code>pushd output
+python -m pelican.server
+popd
+</code></pre></li>
+
+<li><p><code>pelpub.bat</code> pour générer le site de production dans le dossier output</p>
+
+<pre><code>pelican content --output output --settings publishconf.py
 </code></pre></li>
 </ul>
 
-<h2 id="sous-linux">Sous linux</h2>
+<p>Pour développer le site en local, lancer:</p>
+
+<pre><code>sauml.bitbucket.org&gt;start pelrun.bat
+sauml.bitbucket.org&gt;start pelserve.bat
+</code></pre>
+
+<p>Le site est disponible à l&rsquo;url <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></p>
+
+<h1 id="configuration">Configuration</h1>
 
 <ul>
-<li><p>Aller dans le répertoire des langues vim (le créer s&rsquo;il n&rsquo;existe pas).</p>
-
-<pre><code>mkdir -p ~/.vim/spell
-cd ~/.vim/spell
-</code></pre></li>
-
-<li><p>Télécharger les fichiers de traduction</p>
-
-<pre><code>wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
-wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
-wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
-wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
-</code></pre></li>
+<li>Dé-commenter <code>RELATIVE_URLS = True</code> dans <code>pelicanconf.py</code></li>
+<li>Mettre <code>DELETE_OUTPUT_DIRECTORY = False</code> dans <code>publishconf.py</code> pour ne pas supprimer le dépôt git dans output.</li>
 </ul>
 
-<h1 id="paramétrage">Paramétrage</h1>
+<h2 id="thèmes">Thèmes</h2>
 
-<ul>
-<li>Dans <code>.vimrc</code> ajouter:
+<p>Récupérer les thèmes existants:</p>
 
-<ul>
-<li><code>set spelllang=fr</code> pour définir la langue.</li>
-<li><code>set spell</code> pour activer la correction par défaut.</li>
-</ul></li>
-</ul>
+<pre><code>pelican&gt;git clone https://github.com/getpelican/pelican-themes.git
+</code></pre>
 
-<h1 id="utilisation">Utilisation</h1>
+<p>Définir le thème choisi dans pelicanconf.py</p>
 
-<h2 id="en-mode-normal">En mode normal</h2>
+<pre><code>THEME = &quot;../pelican-themes/foundation-default-colours&quot;
+</code></pre>
 
-<ul>
-<li><code>]s</code> va au mot suivant.</li>
-<li><code>[s</code> va au mot précédent.</li>
-<li><code>zg</code> ajoute le mot dans le dictionnaire local.</li>
-<li><code>zG</code> ajoute le mot au dictionnaire global.</li>
-<li><code>z=</code> affiche la liste des propositions.</li>
-</ul>
+<h2 id="plugins">Plugins</h2>
 
-<h2 id="en-mode-insertion">En mode insertion</h2>
+<p>Pour les récupérer</p>
 
-<p>Il es possible d&rsquo;afficher les propositions en cours de frappe.<br />
-Pour cela, il faut utiliser la complétion <code>Ctrl+X</code>.<br />
-Le mode de complétion utilisé par <code>spell</code> est <code>s</code>.<br />
-Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis <code>s</code>.</p>
+<pre><code>pelican&gt;git clone https://github.com/getpelican/pelican-plugins.git
+</code></pre>
+
+<p>Puis dans pelicanconf.py</p>
+
+<pre><code>PLUGIN_PATH = '../pelican-plugins'
+</code></pre>
 
 </div>
 
@@ -251,7 +286,7 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="/2015/12/pelican-creation-site/" title="Création du blog-notes avec Pélican">
+          <a href="/2015/12/2015-12-16_theme_tests/" title="Test du theme en cours">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
@@ -259,7 +294,7 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
 
     
       <li class="next">
-        <a href="/2017/02/un-blog-pour-mes-notes/" title="Un blog pour mes notes">
+        <a href="/2016/01/2016-01-13_vim_correction_othographe/" title="Correction d&#39;orthographe sous vim">
             Next <span aria-hidden="true">&rarr;</span>
         </a>
       </li>
@@ -280,22 +315,21 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
     </div>
     
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div class="sidebar-nav-fixed affix">
+        <div>
   
     <div class="section">
       <header><div class="title">TableOfContents</div></header>
       <div class="list-default"><nav id="TableOfContents">
 <ul>
-<li><a href="#installation">Installation</a>
+<li><a href="#introduction">Introduction</a>
 <ul>
-<li><a href="#sous-window">Sous window</a></li>
-<li><a href="#sous-linux">Sous linux</a></li>
+<li><a href="#création-du-site">Création du site</a></li>
 </ul></li>
-<li><a href="#paramétrage">Paramétrage</a></li>
-<li><a href="#utilisation">Utilisation</a>
+<li><a href="#création-des-lanceurs-pour-windows">Création des lanceurs pour windows</a></li>
+<li><a href="#configuration">Configuration</a>
 <ul>
-<li><a href="#en-mode-normal">En mode normal</a></li>
-<li><a href="#en-mode-insertion">En mode insertion</a></li>
+<li><a href="#thèmes">Thèmes</a></li>
+<li><a href="#plugins">Plugins</a></li>
 </ul></li>
 </ul>
 </nav></div>
@@ -308,31 +342,35 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
         <ul>
         
           <li>
-          <a href="/2017/03/hugo-2-installer/">Hugo Partie 2: Installer</a>
+          <a href="/2017/03/2017-03-04_installer_hp_8710_sur_s2/">Installer imprimante HP 8710 sur S2</a>
           </li>
         
           <li>
-          <a href="/2017/02/hugo-1-index/">Hugo Partie 1: Index</a>
+          <a href="/2017/03/2017-03-03_hugo_2_installer/">Hugo Partie 2: Installer</a>
           </li>
         
           <li>
-          <a href="/2017/02/un-blog-pour-mes-notes/">Un blog pour mes notes</a>
+          <a href="/2017/02/2017-02-28_hugo_1-index/">Hugo Partie 1: Index</a>
           </li>
         
           <li>
-          <a href="/2016/01/vim-correction-orthographe/">Correction d&#39;orthographe sous vim</a>
+          <a href="/2017/02/2017-02-24_un_blog_pour_mes_notes/">Un blog pour mes notes</a>
           </li>
         
           <li>
-          <a href="/2015/12/pelican-creation-site/">Création du blog-notes avec Pélican</a>
+          <a href="/2016/01/2016-01-13_vim_correction_othographe/">Correction d&#39;orthographe sous vim</a>
           </li>
         
           <li>
-          <a href="/2015/12/test-theme/">Test du theme en cours</a>
+          <a href="/2015/12/2015-12-16_pelican_creation_site/">Création du blog-notes avec Pélican</a>
           </li>
         
           <li>
-          <a href="/2015/12/installation-de-pelican/">Installation de Pélican</a>
+          <a href="/2015/12/2015-12-16_theme_tests/">Test du theme en cours</a>
+          </li>
+        
+          <li>
+          <a href="/2015/12/2015-12-15_pelican_installation/">Installation de Pélican</a>
           </li>
         
         </ul>
@@ -347,7 +385,7 @@ Il suffit donc lorsqu&rsquo;une faute apparait de faire <code>Ctrl+X</code> puis
 
         <div class="content">
           <ul>
-            <li><a href="/tags/blog">blog</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/github">github</a></li><li><a href="/tags/index">index</a></li><li><a href="/tags/vim">vim</a></li>
+            <li><a href="/tags/blog">blog</a></li><li><a href="/tags/installation">installation</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/github">github</a></li><li><a href="/tags/index">index</a></li><li><a href="/tags/s2">s2</a></li><li><a href="/tags/vim">vim</a></li>
           </ul>
         </div>
       </div>

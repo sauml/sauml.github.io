@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on Sauml Blog Notes</title>
+    <link>/tags/installation/index.xml</link>
+    <description>Recent content in Installation on Sauml Blog Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <atom:link href="/tags/installation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installer imprimante HP 8710 sur S2</title>
+      <link>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</link>
+      <pubDate>Sat, 04 Mar 2017 21:26:41 +0100</pubDate>
+      
+      <guid>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai besoin d&amp;rsquo;imprimer sur une imprimante HP 8710 à partir de S2 (mubuntu 16.04).&lt;br /&gt;
+L&amp;rsquo;imprimante est reconnue mais le driver mais il n&amp;rsquo;y a pas le driver.&lt;br /&gt;
+Il va donc falloir l&amp;rsquo;installer.&lt;/p&gt;
+
+&lt;p&gt;HPLIP est l&amp;rsquo;utilitaire de gestions des imprimantes HP.&lt;/p&gt;
+
+&lt;p&gt;Pour savoir si l&amp;rsquo;imprimante est gérée par HPLIP il faut:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/supported_devices/index.html&#34;&gt;page&lt;/a&gt;,&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;rechercher l&amp;rsquo;imprimante&lt;/li&gt;
+&lt;li&gt;récupérer la version minimal de HPLIP nécessaire.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour la 8710, il faut la 3.16.5 minimum.&lt;/p&gt;
+
+&lt;p&gt;Pour connaître la version actuellement installée:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ dpkg -l hplip
+
+Souhait=inconnU/Installé/suppRimé/Purgé/H=à garder
+| État=Non/Installé/fichier-Config/dépaqUeté/échec-conFig/H=semi-installé/W=attend-traitement-déclenchements
+|/ Err?=(aucune)/besoin Réinstallation (État,Err: majuscule=mauvais)
+||/ Nom            Version      Architecture Description
++++-==============-============-============-=================================
+rc  hplip          3.15.2+repac amd64        HP Linux Printing and Imaging Sys
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C&amp;rsquo;est la 3.15.2.&lt;br /&gt;
+Il faut la mettre à jour.&lt;/p&gt;
+
+&lt;p&gt;On vérifie la dernière version disponible dans le dépôt.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ apt-cache policy hplip
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C&amp;rsquo;est la 3.16.3.&lt;/p&gt;
+
+&lt;p&gt;Reste à installer la dernière version disponible à partir du site de HP.&lt;/p&gt;
+
+&lt;p&gt;Aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/downloads.html&#34;&gt;page&lt;/a&gt;.&lt;br /&gt;
+Il y a un bouton &amp;ldquo;télécharger&amp;rdquo; vers le bas.&lt;br /&gt;
+Après téléchargement, un  fichier &lt;code&gt;hplip-3.16.11.run&lt;/code&gt; est présent dans &lt;code&gt;/home/xxx/Téléchargements&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exécuter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ cd Téléchargements/
+~$ sh hplip-3.16.11.run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Répondre aux questions.&lt;br /&gt;
+L&amp;rsquo;imprimante est configurée à la fin de l&amp;rsquo;installation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Partie 1: Index</title>
+      <link>/2017/02/2017-02-28_hugo_1-index/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/2017-02-28_hugo_1-index/</guid>
+      <description>
+
+&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/2017-02-24_un_blog_pour_mes_notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
+
+&lt;p&gt;Je vais détailler les différentes étapes que je réaliserai pour y arriver.&lt;br /&gt;
+Il y aura donc une série d&amp;rsquo;articles consacrées à la mise en place de ce blog à l&amp;rsquo;aide de Hugo.&lt;br /&gt;
+Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonction de mon avancée dans la découvertes de Hugo.&lt;/p&gt;
+
+&lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/2017-02-28_hugo_1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
+&lt;li&gt;Hugo Partie 6: Déployer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;liens-intéressants&#34;&gt;Liens intéressants&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Site Officiel &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
+
+&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Correction d&#39;orthographe sous vim</title>
+      <link>/2016/01/2016-01-13_vim_correction_othographe/</link>
+      <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/01/2016-01-13_vim_correction_othographe/</guid>
+      <description>
+
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fermer vim&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sous-window&#34;&gt;Sous window&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Aller dans le répertoire des langues vim&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd C:\Program Files\Vim\vim74\spell
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Télécharger les fichiers de traduction.&lt;br /&gt;
+Penser à paramétrer le proxy si besoin &lt;code&gt;set et HTTP_PROXY=http://...&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl -o fr.latin1.spl http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
+curl -o fr.latin1.sug http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
+curl -o fr.utf-8.spl http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+curl -o fr.utf-8.sug http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;sous-linux&#34;&gt;Sous linux&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Aller dans le répertoire des langues vim (le créer s&amp;rsquo;il n&amp;rsquo;existe pas).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir -p ~/.vim/spell
+cd ~/.vim/spell
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Télécharger les fichiers de traduction&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.spl
+wget http://ftp.vim.org/vim/runtime/spell/fr.latin1.sug
+wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.spl
+wget http://ftp.vim.org/vim/runtime/spell/fr.utf-8.sug
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;paramétrage&#34;&gt;Paramétrage&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dans &lt;code&gt;.vimrc&lt;/code&gt; ajouter:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;set spelllang=fr&lt;/code&gt; pour définir la langue.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;set spell&lt;/code&gt; pour activer la correction par défaut.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;utilisation&#34;&gt;Utilisation&lt;/h1&gt;
+
+&lt;h2 id=&#34;en-mode-normal&#34;&gt;En mode normal&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;]s&lt;/code&gt; va au mot suivant.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[s&lt;/code&gt; va au mot précédent.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zg&lt;/code&gt; ajoute le mot dans le dictionnaire local.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zG&lt;/code&gt; ajoute le mot au dictionnaire global.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;z=&lt;/code&gt; affiche la liste des propositions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;en-mode-insertion&#34;&gt;En mode insertion&lt;/h2&gt;
+
+&lt;p&gt;Il es possible d&amp;rsquo;afficher les propositions en cours de frappe.&lt;br /&gt;
+Pour cela, il faut utiliser la complétion &lt;code&gt;Ctrl+X&lt;/code&gt;.&lt;br /&gt;
+Le mode de complétion utilisé par &lt;code&gt;spell&lt;/code&gt; est &lt;code&gt;s&lt;/code&gt;.&lt;br /&gt;
+Il suffit donc lorsqu&amp;rsquo;une faute apparait de faire &lt;code&gt;Ctrl+X&lt;/code&gt; puis &lt;code&gt;s&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation de Pélican</title>
+      <link>/2015/12/2015-12-15_pelican_installation/</link>
+      <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/12/2015-12-15_pelican_installation/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Pélican est un générateur de site statique écrit en python.&lt;/p&gt;
+
+&lt;p&gt;Un générateur de site statique permet de générer en site constitué de pages
+html à partir de fichiers texte saisis dans différents formats Markdown,
+reStructuredText, &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Il est facile d&amp;rsquo;héberger le site généré sur github ou bitbucket par exemple.&lt;/p&gt;
+
+&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;Python et pip doivent être installés.
+Il suffit de lancer.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install pelican
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Il est préférable de l&amp;rsquo;installé dans un environnement virtuel
+python.&lt;br /&gt;
+Je ne le fais pas pour cette installation qui n&amp;rsquo;est pas définitive.&lt;/p&gt;
+
+&lt;h1 id=&#34;création-des-répertoires-de-travail&#34;&gt;Création des répertoires de travail&lt;/h1&gt;
+
+&lt;p&gt;Je crée les répertoires suivants:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pelican&lt;/code&gt; qui contiendra tous les éléments relatifs à pélican.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;pelican-themes&lt;/code&gt; qui permettra de récupérer tous les thèmes pélicans.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sauml.bitbucket.org&lt;/code&gt; qui correspond à ce blog-notes.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;./pelican
+├── pelican-plugins
+├── pelican-themes
+└── sauml.bitbucket.org
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tout est en place pour la création d&amp;rsquo;un site.&lt;br /&gt;
+Un exemple est disponible ici: &lt;a href=&#34;/2015/12/2015-12-16_pelican_creation_site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

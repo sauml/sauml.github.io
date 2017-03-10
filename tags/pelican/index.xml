@@ -10,15 +10,15 @@
     
     <item>
       <title>Création du blog-notes avec Pélican</title>
-      <link>/2015/12/pelican-creation-site/</link>
+      <link>/2015/12/2015-12-16_pelican_creation_site/</link>
       <pubDate>Wed, 16 Dec 2015 22:48:34 +0100</pubDate>
       
-      <guid>/2015/12/pelican-creation-site/</guid>
+      <guid>/2015/12/2015-12-16_pelican_creation_site/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/installation-de-pelican/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/2015-12-15_pelican_installation/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Cet article concerne la création de ce blog-notes.&lt;/p&gt;
 
@@ -123,10 +123,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Installation de Pélican</title>
-      <link>/2015/12/installation-de-pelican/</link>
+      <link>/2015/12/2015-12-15_pelican_installation/</link>
       <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/installation-de-pelican/</guid>
+      <guid>/2015/12/2015-12-15_pelican_installation/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -168,7 +168,7 @@ Je ne le fais pas pour cette installation qui n&amp;rsquo;est pas définitive.&l
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Tout est en place pour la création d&amp;rsquo;un site.&lt;br /&gt;
-Un exemple est disponible ici: &lt;a href=&#34;/2015/12/pelican-creation-site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
+Un exemple est disponible ici: &lt;a href=&#34;/2015/12/2015-12-16_pelican_creation_site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

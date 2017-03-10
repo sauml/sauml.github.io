@@ -6,22 +6,85 @@
     <description>Recent content on Sauml Blog Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Fri, 03 Mar 2017 22:38:10 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 04 Mar 2017 21:26:41 +0100</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Installer imprimante HP 8710 sur S2</title>
+      <link>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</link>
+      <pubDate>Sat, 04 Mar 2017 21:26:41 +0100</pubDate>
+      
+      <guid>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai besoin d&amp;rsquo;imprimer sur une imprimante HP 8710 à partir de S2 (mubuntu 16.04).&lt;br /&gt;
+L&amp;rsquo;imprimante est reconnue mais le driver mais il n&amp;rsquo;y a pas le driver.&lt;br /&gt;
+Il va donc falloir l&amp;rsquo;installer.&lt;/p&gt;
+
+&lt;p&gt;HPLIP est l&amp;rsquo;utilitaire de gestions des imprimantes HP.&lt;/p&gt;
+
+&lt;p&gt;Pour savoir si l&amp;rsquo;imprimante est gérée par HPLIP il faut:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/supported_devices/index.html&#34;&gt;page&lt;/a&gt;,&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;rechercher l&amp;rsquo;imprimante&lt;/li&gt;
+&lt;li&gt;récupérer la version minimal de HPLIP nécessaire.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour la 8710, il faut la 3.16.5 minimum.&lt;/p&gt;
+
+&lt;p&gt;Pour connaître la version actuellement installée:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ dpkg -l hplip
+
+Souhait=inconnU/Installé/suppRimé/Purgé/H=à garder
+| État=Non/Installé/fichier-Config/dépaqUeté/échec-conFig/H=semi-installé/W=attend-traitement-déclenchements
+|/ Err?=(aucune)/besoin Réinstallation (État,Err: majuscule=mauvais)
+||/ Nom            Version      Architecture Description
++++-==============-============-============-=================================
+rc  hplip          3.15.2+repac amd64        HP Linux Printing and Imaging Sys
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C&amp;rsquo;est la 3.15.2.&lt;br /&gt;
+Il faut la mettre à jour.&lt;/p&gt;
+
+&lt;p&gt;On vérifie la dernière version disponible dans le dépôt.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ apt-cache policy hplip
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;C&amp;rsquo;est la 3.16.3.&lt;/p&gt;
+
+&lt;p&gt;Reste à installer la dernière version disponible à partir du site de HP.&lt;/p&gt;
+
+&lt;p&gt;Aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/downloads.html&#34;&gt;page&lt;/a&gt;.&lt;br /&gt;
+Il y a un bouton &amp;ldquo;télécharger&amp;rdquo; vers le bas.&lt;br /&gt;
+Après téléchargement, un  fichier &lt;code&gt;hplip-3.16.11.run&lt;/code&gt; est présent dans &lt;code&gt;/home/xxx/Téléchargements&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Exécuter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~$ cd Téléchargements/
+~$ sh hplip-3.16.11.run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Répondre aux questions.&lt;br /&gt;
+L&amp;rsquo;imprimante est configurée à la fin de l&amp;rsquo;installation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hugo Partie 2: Installer</title>
-      <link>/2017/03/hugo-2-installer/</link>
+      <link>/2017/03/2017-03-03_hugo_2_installer/</link>
       <pubDate>Fri, 03 Mar 2017 22:38:10 +0100</pubDate>
       
-      <guid>/2017/03/hugo-2-installer/</guid>
+      <guid>/2017/03/2017-03-03_hugo_2_installer/</guid>
       <description>
 
 &lt;p&gt;Cet article est le deuxième article de la série consacrée aux étapes que j&amp;rsquo;ai suivies pour mettre en place ce blog avec hugo.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/2017-02-28_hugo_1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
@@ -168,13 +231,13 @@ Ce qui est particulièrement intéressant lors de la saisie d&amp;rsquo;un artic
     
     <item>
       <title>Hugo Partie 1: Index</title>
-      <link>/2017/02/hugo-1-index/</link>
+      <link>/2017/02/2017-02-28_hugo_1-index/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/02/hugo-1-index/</guid>
+      <guid>/2017/02/2017-02-28_hugo_1-index/</guid>
       <description>
 
-&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/un-blog-pour-mes-notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
+&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/2017-02-24_un_blog_pour_mes_notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
 
 &lt;p&gt;Je vais détailler les différentes étapes que je réaliserai pour y arriver.&lt;br /&gt;
 Il y aura donc une série d&amp;rsquo;articles consacrées à la mise en place de ce blog à l&amp;rsquo;aide de Hugo.&lt;br /&gt;
@@ -183,8 +246,8 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 &lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/2017-02-28_hugo_1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
@@ -199,16 +262,16 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 
 &lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
 
-&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Un blog pour mes notes</title>
-      <link>/2017/02/un-blog-pour-mes-notes/</link>
+      <link>/2017/02/2017-02-24_un_blog_pour_mes_notes/</link>
       <pubDate>Fri, 24 Feb 2017 23:25:04 +0100</pubDate>
       
-      <guid>/2017/02/un-blog-pour-mes-notes/</guid>
+      <guid>/2017/02/2017-02-24_un_blog_pour_mes_notes/</guid>
       <description>
 
 &lt;p&gt;Je cherche une solution pour sauvegarder mes notes, les rendre accessibles de partout et les modifier des mes différents postes.&lt;/p&gt;
@@ -327,10 +390,10 @@ Je modifierai les articles existants pour les compléter ou les corriger en fonc
     
     <item>
       <title>Correction d&#39;orthographe sous vim</title>
-      <link>/2016/01/vim-correction-orthographe/</link>
+      <link>/2016/01/2016-01-13_vim_correction_othographe/</link>
       <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>/2016/01/vim-correction-orthographe/</guid>
+      <guid>/2016/01/2016-01-13_vim_correction_othographe/</guid>
       <description>
 
 &lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
@@ -409,15 +472,15 @@ Il suffit donc lorsqu&amp;rsquo;une faute apparait de faire &lt;code&gt;Ctrl+X&l
     
     <item>
       <title>Création du blog-notes avec Pélican</title>
-      <link>/2015/12/pelican-creation-site/</link>
+      <link>/2015/12/2015-12-16_pelican_creation_site/</link>
       <pubDate>Wed, 16 Dec 2015 22:48:34 +0100</pubDate>
       
-      <guid>/2015/12/pelican-creation-site/</guid>
+      <guid>/2015/12/2015-12-16_pelican_creation_site/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/installation-de-pelican/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;La création de la structure du site est détaillée ici: &lt;a href=&#34;/2015/12/2015-12-15_pelican_installation/&#34;&gt;Installation de Pélican&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Cet article concerne la création de ce blog-notes.&lt;/p&gt;
 
@@ -522,10 +585,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Test du theme en cours</title>
-      <link>/2015/12/test-theme/</link>
+      <link>/2015/12/2015-12-16_theme_tests/</link>
       <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/test-theme/</guid>
+      <guid>/2015/12/2015-12-16_theme_tests/</guid>
       <description>
 
 &lt;h1 id=&#34;titre-niveau-1&#34;&gt;titre niveau 1&lt;/h1&gt;
@@ -548,10 +611,10 @@ sauml.bitbucket.org&amp;gt;start pelserve.bat
     
     <item>
       <title>Installation de Pélican</title>
-      <link>/2015/12/installation-de-pelican/</link>
+      <link>/2015/12/2015-12-15_pelican_installation/</link>
       <pubDate>Tue, 15 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/2015/12/installation-de-pelican/</guid>
+      <guid>/2015/12/2015-12-15_pelican_installation/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -593,7 +656,7 @@ Je ne le fais pas pour cette installation qui n&amp;rsquo;est pas définitive.&l
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Tout est en place pour la création d&amp;rsquo;un site.&lt;br /&gt;
-Un exemple est disponible ici: &lt;a href=&#34;/2015/12/pelican-creation-site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
+Un exemple est disponible ici: &lt;a href=&#34;/2015/12/2015-12-16_pelican_creation_site/&#34;&gt;Création du blog-notes avec Pélican&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

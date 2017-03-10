@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/2017/03/hugo-2-installer/</loc>
+    <loc>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</loc>
+    <lastmod>2017-03-04T21:26:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2017/03/2017-03-03_hugo_2_installer/</loc>
     <lastmod>2017-03-03T22:38:10+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/02/hugo-1-index/</loc>
+    <loc>/2017/02/2017-02-28_hugo_1-index/</loc>
     <lastmod>2017-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/02/un-blog-pour-mes-notes/</loc>
+    <loc>/2017/02/2017-02-24_un_blog_pour_mes_notes/</loc>
     <lastmod>2017-02-24T23:25:04+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/2016/01/vim-correction-orthographe/</loc>
+    <loc>/2016/01/2016-01-13_vim_correction_othographe/</loc>
     <lastmod>2016-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2015/12/pelican-creation-site/</loc>
+    <loc>/2015/12/2015-12-16_pelican_creation_site/</loc>
     <lastmod>2015-12-16T22:48:34+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/2015/12/test-theme/</loc>
+    <loc>/2015/12/2015-12-16_theme_tests/</loc>
     <lastmod>2015-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2015/12/installation-de-pelican/</loc>
+    <loc>/2015/12/2015-12-15_pelican_installation/</loc>
     <lastmod>2015-12-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -61,6 +66,12 @@
   </url>
   
   <url>
+    <loc>/tags/installation/</loc>
+    <lastmod>2017-03-04T21:26:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/pelican/</loc>
     <lastmod>2015-12-16T22:48:34+01:00</lastmod>
     <priority>0</priority>
@@ -68,13 +79,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-03-03T22:38:10+01:00</lastmod>
+    <lastmod>2017-03-04T21:26:41+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/s2/</loc>
+    <lastmod>2017-03-04T21:26:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-03-03T22:38:10+01:00</lastmod>
+    <lastmod>2017-03-04T21:26:41+01:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Test du theme en cours  &middot; Sauml Blog Notes</title>
+  <title>Installer imprimante HP 8710 sur S2  &middot; Sauml Blog Notes</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,23 +14,25 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="blog, ">
+<meta name="keywords" content="S2, installation, ">
 
 
-<meta property="og:title" content="Test du theme en cours  &middot; Sauml Blog Notes ">
+<meta property="og:title" content="Installer imprimante HP 8710 sur S2  &middot; Sauml Blog Notes ">
 <meta property="og:site_name" content="Sauml Blog Notes"/>
-<meta property="og:url" content="/2015/12/test-theme/" />
+<meta property="og:url" content="/2017/03/2017-03-04_installer_hp_8710_sur_s2/" />
 <meta property="og:locale" content="fr-FR">
 
 
 <meta property="og:type" content="article" />
 <meta property="og:description" content=""/>
-<meta property="og:article:published_time" content="2015-12-16T00:00:00Z" />
-<meta property="og:article:modified_time" content="2015-12-16T00:00:00Z" />
+<meta property="og:article:published_time" content="2017-03-04T21:26:41&#43;01:00" />
+<meta property="og:article:modified_time" content="2017-03-04T21:26:41&#43;01:00" />
 
   
     
-<meta property="og:article:tag" content="blog">
+<meta property="og:article:tag" content="S2">
+    
+<meta property="og:article:tag" content="installation">
     
   
 
@@ -38,9 +40,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Test du theme en cours" />
+<meta name="twitter:title" content="Installer imprimante HP 8710 sur S2" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="/2015/12/test-theme/" />
+<meta name="twitter:url" content="/2017/03/2017-03-04_installer_hp_8710_sur_s2/" />
 <meta name="twitter:domain" content="/">
   
 
@@ -48,20 +50,20 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Test du theme en cours",
+    "headline": "Installer imprimante HP 8710 sur S2",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
-    "datePublished": "2015-12-16",
+    "datePublished": "2017-03-04",
     "description": "",
-    "wordCount":  23 
+    "wordCount":  184 
   }
 </script>
 
 
 
-<link rel="canonical" href="/2015/12/test-theme/" />
+<link rel="canonical" href="/2017/03/2017-03-04_installer_hp_8710_sur_s2/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
 <link rel="icon" href="/favicon.png">
 <meta name="generator" content="Hugo 0.18.1" />
@@ -136,26 +138,28 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>Test du theme en cours
+    <h1>Installer imprimante HP 8710 sur S2
 </h1>
 
     <div class="metas">
 <small>
   <i class="fa fa-calendar"></i>
-  <time datetime="2015-12-16">16 Dec, 2015</time>
+  <time datetime="2017-03-04">4 Mar, 2017</time>
 </small>
 
 
   <small>
   &middot; Read in about 1 min
-  &middot; (23 words)
+  &middot; (184 words)
 </small>
 
 
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="/tags/blog" class="label label-primary">blog</a>
+  <a href="/tags/s2" class="label label-primary">S2</a>
+  
+  <a href="/tags/installation" class="label label-primary">installation</a>
   
 
 
@@ -167,23 +171,60 @@
 </div>
 
       <div class="content">
-  
+  <p>J&rsquo;ai besoin d&rsquo;imprimer sur une imprimante HP 8710 à partir de S2 (mubuntu 16.04).<br />
+L&rsquo;imprimante est reconnue mais le driver mais il n&rsquo;y a pas le driver.<br />
+Il va donc falloir l&rsquo;installer.</p>
 
-<h1 id="titre-niveau-1">titre niveau 1</h1>
+<p>HPLIP est l&rsquo;utilitaire de gestions des imprimantes HP.</p>
 
-<h2 id="titre-niveau-2">titre niveau 2</h2>
+<p>Pour savoir si l&rsquo;imprimante est gérée par HPLIP il faut:</p>
 
-<h3 id="titre-niveau-3">titre niveau 3</h3>
+<ul>
+<li>aller sur cette <a href="http://hplipopensource.com/hplip-web/supported_devices/index.html">page</a>,<br /></li>
+<li>rechercher l&rsquo;imprimante</li>
+<li>récupérer la version minimal de HPLIP nécessaire.<br /></li>
+</ul>
 
-<h4 id="titre-niveau-4">titre niveau 4</h4>
+<p>Pour la 8710, il faut la 3.16.5 minimum.</p>
 
-<h5 id="titre-niveau-5">titre niveau 5</h5>
+<p>Pour connaître la version actuellement installée:</p>
 
-<h6 id="titre-niveau-6">titre niveau 6</h6>
+<pre><code>~$ dpkg -l hplip
 
-<p>####### titre niveau 7</p>
+Souhait=inconnU/Installé/suppRimé/Purgé/H=à garder
+| État=Non/Installé/fichier-Config/dépaqUeté/échec-conFig/H=semi-installé/W=attend-traitement-déclenchements
+|/ Err?=(aucune)/besoin Réinstallation (État,Err: majuscule=mauvais)
+||/ Nom            Version      Architecture Description
++++-==============-============-============-=================================
+rc  hplip          3.15.2+repac amd64        HP Linux Printing and Imaging Sys
 
-<p><a href="2015-12-15_pelican_installation.md">2015-12-15_pelican_installation.md</a></p>
+</code></pre>
+
+<p>C&rsquo;est la 3.15.2.<br />
+Il faut la mettre à jour.</p>
+
+<p>On vérifie la dernière version disponible dans le dépôt.</p>
+
+<pre><code>$ apt-cache policy hplip
+
+</code></pre>
+
+<p>C&rsquo;est la 3.16.3.</p>
+
+<p>Reste à installer la dernière version disponible à partir du site de HP.</p>
+
+<p>Aller sur cette <a href="http://hplipopensource.com/hplip-web/downloads.html">page</a>.<br />
+Il y a un bouton &ldquo;télécharger&rdquo; vers le bas.<br />
+Après téléchargement, un  fichier <code>hplip-3.16.11.run</code> est présent dans <code>/home/xxx/Téléchargements</code>.</p>
+
+<p>Exécuter:</p>
+
+<pre><code>~$ cd Téléchargements/
+~$ sh hplip-3.16.11.run
+</code></pre>
+
+<p>Répondre aux questions.<br />
+L&rsquo;imprimante est configurée à la fin de l&rsquo;installation.</p>
 
 </div>
 
@@ -195,18 +236,12 @@
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="/2015/12/installation-de-pelican/" title="Installation de Pélican">
+          <a href="/2017/03/2017-03-03_hugo_2_installer/" title="Hugo Partie 2: Installer">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
-    
-      <li class="next">
-        <a href="/2015/12/pelican-creation-site/" title="Création du blog-notes avec Pélican">
-            Next <span aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
     
     </ul> </nav>
   
@@ -224,30 +259,11 @@
     </div>
     
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <div class="sidebar-nav-fixed affix">
+        <div>
   
     <div class="section">
       <header><div class="title">TableOfContents</div></header>
-      <div class="list-default"><nav id="TableOfContents">
-<ul>
-<li><a href="#titre-niveau-1">titre niveau 1</a>
-<ul>
-<li><a href="#titre-niveau-2">titre niveau 2</a>
-<ul>
-<li><a href="#titre-niveau-3">titre niveau 3</a>
-<ul>
-<li><a href="#titre-niveau-4">titre niveau 4</a>
-<ul>
-<li><a href="#titre-niveau-5">titre niveau 5</a>
-<ul>
-<li><a href="#titre-niveau-6">titre niveau 6</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav></div>
+      <div class="list-default"></div>
     </div>
     
 
@@ -257,31 +273,35 @@
         <ul>
         
           <li>
-          <a href="/2017/03/hugo-2-installer/">Hugo Partie 2: Installer</a>
+          <a href="/2017/03/2017-03-04_installer_hp_8710_sur_s2/">Installer imprimante HP 8710 sur S2</a>
           </li>
         
           <li>
-          <a href="/2017/02/hugo-1-index/">Hugo Partie 1: Index</a>
+          <a href="/2017/03/2017-03-03_hugo_2_installer/">Hugo Partie 2: Installer</a>
           </li>
         
           <li>
-          <a href="/2017/02/un-blog-pour-mes-notes/">Un blog pour mes notes</a>
+          <a href="/2017/02/2017-02-28_hugo_1-index/">Hugo Partie 1: Index</a>
           </li>
         
           <li>
-          <a href="/2016/01/vim-correction-orthographe/">Correction d&#39;orthographe sous vim</a>
+          <a href="/2017/02/2017-02-24_un_blog_pour_mes_notes/">Un blog pour mes notes</a>
           </li>
         
           <li>
-          <a href="/2015/12/pelican-creation-site/">Création du blog-notes avec Pélican</a>
+          <a href="/2016/01/2016-01-13_vim_correction_othographe/">Correction d&#39;orthographe sous vim</a>
           </li>
         
           <li>
-          <a href="/2015/12/test-theme/">Test du theme en cours</a>
+          <a href="/2015/12/2015-12-16_pelican_creation_site/">Création du blog-notes avec Pélican</a>
           </li>
         
           <li>
-          <a href="/2015/12/installation-de-pelican/">Installation de Pélican</a>
+          <a href="/2015/12/2015-12-16_theme_tests/">Test du theme en cours</a>
+          </li>
+        
+          <li>
+          <a href="/2015/12/2015-12-15_pelican_installation/">Installation de Pélican</a>
           </li>
         
         </ul>
@@ -296,7 +316,7 @@
 
         <div class="content">
           <ul>
-            <li><a href="/tags/blog">blog</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/github">github</a></li><li><a href="/tags/index">index</a></li><li><a href="/tags/vim">vim</a></li>
+            <li><a href="/tags/blog">blog</a></li><li><a href="/tags/installation">installation</a></li><li><a href="/tags/hugo">hugo</a></li><li><a href="/tags/pelican">pelican</a></li><li><a href="/tags/github">github</a></li><li><a href="/tags/index">index</a></li><li><a href="/tags/s2">s2</a></li><li><a href="/tags/vim">vim</a></li>
           </ul>
         </div>
       </div>

@@ -10,13 +10,13 @@
     
     <item>
       <title>Hugo Partie 1: Index</title>
-      <link>/2017/02/hugo-1-index/</link>
+      <link>/2017/02/2017-02-28_hugo_1-index/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/02/hugo-1-index/</guid>
+      <guid>/2017/02/2017-02-28_hugo_1-index/</guid>
       <description>
 
-&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/un-blog-pour-mes-notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
+&lt;p&gt;Après avoir choisi d&amp;rsquo;utiliser Hugo pour garder une trace de mes notes (voir explication &lt;a href=&#34;/2017/02/2017-02-24_un_blog_pour_mes_notes/&#34;&gt;ici&lt;/a&gt;), il me reste à mettre en place les outils choisis.&lt;/p&gt;
 
 &lt;p&gt;Je vais détailler les différentes étapes que je réaliserai pour y arriver.&lt;br /&gt;
 Il y aura donc une série d&amp;rsquo;articles consacrées à la mise en place de ce blog à l&amp;rsquo;aide de Hugo.&lt;br /&gt;
@@ -25,8 +25,8 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 &lt;p&gt;Cet index permettra de faire le lien vers les articles de la série ou vers des articles externes qui me semblent intéressants.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/02/hugo-1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/02/2017-02-28_hugo_1-index/&#34;&gt;Hugo Partie 1: Index.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;Hugo Partie 2: Installer.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Hugo Partie 3: Configurer.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 4: Modifier le thème.&lt;/li&gt;
 &lt;li&gt;Hugo Partie 5: Gérer les liens.&lt;/li&gt;
@@ -41,7 +41,7 @@ Je mettrai à jour, améliorerai ou corrigerai les différentes parties en fonct
 
 &lt;h1 id=&#34;a-suivre&#34;&gt;A suivre&amp;hellip;&lt;/h1&gt;
 
-&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/hugo-2-installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
+&lt;p&gt;Le prochain &lt;a href=&#34;/2017/03/2017-03-03_hugo_2_installer/&#34;&gt;article&lt;/a&gt; sera consacré à l&amp;rsquo;installation de Hugo.&lt;/p&gt;
 </description>
     </item>
     
