@@ -15,8 +15,8 @@
       
       <guid>/2017/03/2017-03-04_installer_hp_8710_sur_s2/</guid>
       <description>&lt;p&gt;J&amp;rsquo;ai besoin d&amp;rsquo;imprimer sur une imprimante HP 8710 à partir de S2 (mubuntu 16.04).&lt;br /&gt;
-L&amp;rsquo;imprimante est reconnue mais le driver mais il n&amp;rsquo;y a pas le driver.&lt;br /&gt;
-Il va donc falloir l&amp;rsquo;installer.&lt;/p&gt;
+L&amp;rsquo;imprimante est reconnue mais le driver n&amp;rsquo;est pas installé.&lt;br /&gt;
+Il va donc falloir le faire.&lt;/p&gt;
 
 &lt;p&gt;HPLIP est l&amp;rsquo;utilitaire de gestions des imprimantes HP.&lt;/p&gt;
 
@@ -24,11 +24,11 @@ Il va donc falloir l&amp;rsquo;installer.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;aller sur cette &lt;a href=&#34;http://hplipopensource.com/hplip-web/supported_devices/index.html&#34;&gt;page&lt;/a&gt;,&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;rechercher l&amp;rsquo;imprimante&lt;/li&gt;
+&lt;li&gt;rechercher l&amp;rsquo;imprimante,&lt;/li&gt;
 &lt;li&gt;récupérer la version minimal de HPLIP nécessaire.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Pour la 8710, il faut la 3.16.5 minimum.&lt;/p&gt;
+&lt;p&gt;Pour la 8710, il faut la version 3.16.5 minimum.&lt;/p&gt;
 
 &lt;p&gt;Pour connaître la version actuellement installée:&lt;/p&gt;
 
@@ -46,13 +46,13 @@ rc  hplip          3.15.2+repac amd64        HP Linux Printing and Imaging Sys
 &lt;p&gt;C&amp;rsquo;est la 3.15.2.&lt;br /&gt;
 Il faut la mettre à jour.&lt;/p&gt;
 
-&lt;p&gt;On vérifie la dernière version disponible dans le dépôt.&lt;/p&gt;
+&lt;p&gt;On regarde la dernière disponible dans le dépôt.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ apt-cache policy hplip
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;C&amp;rsquo;est la 3.16.3.&lt;/p&gt;
+&lt;p&gt;C&amp;rsquo;est la 3.16.3. Ce n&amp;rsquo;est pas suffisant.&lt;/p&gt;
 
 &lt;p&gt;Reste à installer la dernière version disponible à partir du site de HP.&lt;/p&gt;
 
